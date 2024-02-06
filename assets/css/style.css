@@ -286,12 +286,12 @@ h6 {
   padding: 0;
   line-height: 1;
   font-weight: 400;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   text-transform: uppercase;
 }
 
 #header .logo a {
-  font-size: 10px;
+  font-size: 12px;
   color: #fff;
 }
 
@@ -634,6 +634,7 @@ h6 {
   animation-delay: 0.4s;
   margin: 0 auto 30px auto;
   color: #fff;
+  font-size: 20px;
 }
 
 #hero .carousel-control-prev,
@@ -1776,8 +1777,8 @@ section {
 }
 
 #footer .footer-top .footer-info p {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 16px;
+  line-height: 30px;
   margin-bottom: 0;
   font-family: "Raleway", sans-serif;
   color: #fff;
