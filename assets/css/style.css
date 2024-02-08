@@ -182,57 +182,6 @@ h6 {
   background: #f8c255;
 }
 
-/* #topbar .cta {
-  background: transparent;
-} */
-
-/* #topbar .cta button {
-  color: #fff;
-  background: #f1a40a;
-  padding: 6px 24px 8px 24px;
-  display: inline-block;
-  transition: 0.3s;
-  border-radius: 50px;
-  border-top-left-radius: 1px;
-  border-bottom-left-radius: 1px;
-  border: none;
-} */
-
-/* #topbar .cta button:hover {
-  color: grey;
-} */
-
-/* #topbar .cta img {
-  position: relative;
-  padding: 6px 24px 8px 24px;
-  display: inline-block;
-  margin-right: -55px;
-  transition: 0.3s;
-  border-radius: 50px;
-  border: none;
-  outline: none;
-  z-index: 1;
-} */
-
-/* #topbar .cta input {
-  position: relative;
-  color: #fff;
-  background: #f6b024;
-  padding: 6px 24px 8px 24px;
-  padding-left: 50px;
-  display: inline-block;
-  transition: 0.3s;
-  border-radius: 50px;
-  border-top-right-radius: 1px;
-  border-bottom-right-radius: 1px;
-  border: none;
-  outline: none;
-} */
-
-/* #topbar .cta input::placeholder {
-  color: #fff;
-} */
-
 @media (min-width: 375px) {
   #topbar {
     font-size: 14px;
@@ -730,6 +679,10 @@ section {
 /*--------------------------------------------------------------
 # Clients
 --------------------------------------------------------------*/
+.clients{
+  padding-bottom: 0;
+}
+
 .clients .swiper-slide a {
   opacity: 0.5;
   transition: 0.3s;
@@ -807,6 +760,10 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.services{
+  padding-top: 0;
+}
+
 .services .icon-box {
   margin-bottom: 20px;
   padding: 50px 40px;
@@ -848,6 +805,15 @@ section {
 /*--------------------------------------------------------------
 # Portfoio
 --------------------------------------------------------------*/
+.portfoio{
+  padding: 0;
+}
+
+.portfoio .container img{
+  height: 234px;
+  width: 336px;
+}
+
 .portfoio #portfolio-flters {
   padding: 0;
   margin: 0 auto 25px auto;
