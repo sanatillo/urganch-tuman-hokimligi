@@ -541,7 +541,7 @@ h6 {
   height: 80vh;
   overflow: hidden;
   position: relative;
-  background: url("../img/urganch.jpg") top center;
+  background: url("../img/urganch3.jpg") top center;
   background-size: cover;
   position: relative;
   margin-bottom: -90px;
@@ -906,6 +906,13 @@ section {
 .portfoio .portfolio-item:hover .portfolio-info {
   opacity: 1;
   bottom: 0;
+}
+
+@media (max-width: 766px) {
+ .portfoio .container img{
+    height: 100%;
+    width: 100%;
+  }
 }
 
 /*--------------------------------------------------------------
