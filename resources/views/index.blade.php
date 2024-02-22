@@ -271,4 +271,9 @@
   </section><!-- End Contact Section -->
 
   </main><!-- End #main -->
+<script>   
+  console.log(fetch("http://127.0.0.1:8000/api/data")
+    .then(x => x.json())
+    .then(console.log()))
+</script>
  @endsection

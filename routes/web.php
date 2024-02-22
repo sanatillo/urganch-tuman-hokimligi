@@ -19,7 +19,9 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/Bosh sahifa', [Pagecontroller ::class, 'index'])->name('home');
 
-Route::get('/', function(){return redirect('/Bosh sahifa');});
+Route::get('/', function(){
+    return redirect('/Bosh sahifa');
+});
 
 Route::get('Tuman hokimligi/tuman hokimligi apparati',function(){ //tuman hokimligi
     return ('tuman hokimligi apparati (jadval)');
@@ -50,7 +52,7 @@ Route::get('Tuman hokimligi/Maxalliy Va Xalqaro BIttimlar, Shartnomalar',functio
 });
 
 Route::get('Tuman hokimligi/Kuni Tartibi, Ish Rejasi Va Yig\'ilish Masalalari',function(){////////////
-    return('rasm tagida izohlar, rasmlar bir qatorda 3 ta ustunda joylashadi');
+    return ('rasm tagida izohlar, rasmlar bir qatorda 3 ta ustunda joylashadi');
 });
 
 Route::get('Tuman hokimligi/Elektron Hukumat Doirasida Qilinayotgan Ishlar',function(){
@@ -68,7 +70,7 @@ Route::get('Tuman hokimligi/Bo\'sh ish o\'rinlari',function(){
 Route::get('Tuman hokimligi/Manzil',function(){
     return ('google maps');
 });
-
+//next//    
 Route::resource('/yangiliklar', PostController::class);
 
 Route::get('Tender Va E\'lonlar',function(){
@@ -97,4 +99,116 @@ Route::get('Umumiy O\'rta Talim Maktablar', function(){
 
 Route::get('Kasb-Talim Kollejlari', function(){
     return ('jadval ko\'rinishida izohlar bn bo\'ladi');
+});
+
+Route::get('statistikalar', function(){
+    return ('rasm statik ko\'rinishda bo\'ladi');
+});
+
+Route::get('Ekologiya', function(){
+    return ('rasm va rasm ostida izohi bilan');
+});
+//naxt//
+Route::get('Murojaatlar statistikasi', function(){
+    return ('sxemaning rasmi va rasm pstida izoh');
+});
+
+Route::get('Ko\'p beriladigan savollarga javoblar', function(){
+    return ('savol javoblari bilan birga boladi + belgisini bosganda javoblar chiqishi kerak');
+});
+
+Route::get('Fuqarolar murojaatlari', function(){
+    return ('file izoh bilan file yuklab olish mumkin bo\'ladi');
+});
+
+Route::get('Notarial Harakatlar Uchun Davlat Boji Stavkalari', function(){
+    return ('jadval ko\'rinishida izohlar bn bo\'ladi');
+});
+
+Route:: get('Mahalliy Davlat Hokimiyati Tarkibi', function(){
+    return ('file izoh bilan file yuklab olish mumkin bo\'ladi');
+});
+
+Route::get('Xaj va Umra Ziyoratiga Borish Tartibi', function(){
+    return ('matn va rasm ko\'rinishida');
+});
+
+Route::get('Biznesni Rejalashtirish va Boshqarish', function(){
+    return ('matn va rasm ko\'rinishida');
+});
+
+Route::get('Tadbirkorlikni Litsenziyalash', function(){
+    return ('file izoh bilan file yuklab olish mumkin bo\'ladi');
+});
+
+Route::get('Alkogolli Savdo Faoliyatini Litsenziyalash Tartibi', function(){
+    return ('tegishli joyga yo\'naltiriladi');
+});
+
+Route::get('Ulgurji Savdo Faoliyatini Litsenziyalash', function(){
+    return ('tegishli joyga yo\'naltiriladi');
+});
+
+Route::get('Davlat Xaridlarini Amalga Oshirish', function(){
+    return ('tegishli joyga yo\'naltiriladi');
+});
+
+Route::get('Transport Xizmatlarini Tashkil Etish', function(){
+    return ('tegishli joyga yo\'naltiriladi');
+});
+
+Route::get('Avtomobil Yoqilg\'isi Savdo Faoliyatini Litsenziyalash', function(){
+    return ('tegishli joyga yo\'naltiriladi');
+});
+
+Route::get('Yer Munosabatlarini Tartibga Solish', function(){
+    return ('tegishli joyga yo\'naltiriladi');
+});
+
+Route::get('Ochiq Malumotlar', function(){
+    return ('rasm va rasm haqida izoh berilgan bo\'aldi');
+});
+
+Route::get('Prezident Farmon, Qarorlari', function(){
+    return ('tegishli joyga yo\'naltiriladi');
+});
+
+Route::get('Qonunchilik Palatasi Qarorlari', function(){
+    return ('tegishli joyga yo\'naltiriladi');
+});
+
+Route::get('Vazirlar Mahkamasi Qarorlari', function(){
+    return ('tegishli joyga yo\'naltiriladi');
+});
+
+Route::get('Tuman Xokimi Qarorlari', function(){
+    return ('file nomida farmoish sanasi va raqami ko\'rsatilgan bo\'ladi');
+});
+
+Route::get('Tuman Xokim Farmoyishlari', function(){
+    return ('file nomida farmoish sanasi va raqami ko\'rsatilgan bo\'ladi');
+});
+
+Route::get('O\'z Kuchini Yo\'qotgan Me\'yoriy Hujjatlar', function(){
+    return ('tegishli joyga yo\'naltiriladi');
+});
+
+Route::get('Tuman Xokimligi Ish Yuritish Yo\'riqnomasi', function(){
+    return ('file izoh bilan va yuklab olish mumkin bo\'ladi');
+});
+
+Route::get('Rasmiy Maruzalar', function(){
+    return('maruza mavzusi va maruza matni bo\'ladi');
+});
+
+Route::get('Ishlab Chiqilgan Chora Tadbirlar', function(){
+    return ('rasm va rasm haqida izohlar bo\'aldi');
+});
+
+Route::get('Analitik Xisobot Va Tahlillar', function(){
+   return(' file izohi va yuklab olish mumkin bo\'ladi.');
+});
+
+Route::get('Deputatlar faoliyati', function(){
+    return ('rasm va rasm haqida izohlar bo\'ladi');
 });
