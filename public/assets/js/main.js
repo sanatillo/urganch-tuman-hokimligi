@@ -280,3 +280,9 @@
   });
 
 })()
+
+// const h1 = document.getElementById("demo");
+
+fetch('index.json')
+  .then(x => x.json())
+  .then(console.log())
