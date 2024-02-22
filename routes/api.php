@@ -19,4 +19,6 @@ use App\Http\Controllers\ApiController;
 // });
 Route::get('data/{id?}',[ApiController::class, 'getData']);
 
+Route::get('/Bosh sahifa', [ApiController ::class, 'index'])->name('home');
+
 // Route::post('addDAta',[ApiController::class, 'addData'];

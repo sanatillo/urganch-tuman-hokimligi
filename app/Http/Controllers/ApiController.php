@@ -11,8 +11,8 @@ class ApiController extends Controller
     {
         return $id?Post::find($id):Post::all();//agar id ga urlda qiymat berilsa (?=if) id bo'yicha Post Modeldagi obyektni olib keladi, Agar idga qiymat berilmasa (:=else) Modelagi barcha obyektni olib keladi
     }
-    // public function addData(Request $request)
-    // {
-    //     // $p
-    // }
+    public function index(Post $posts)
+    {
+        return $posts->all();
+    }
 }
