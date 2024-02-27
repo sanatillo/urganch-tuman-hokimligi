@@ -159,8 +159,24 @@ Route::get('Transport Xizmatlarini Tashkil Etish', function(){
 
 
 
-Route::get('/adhambek', [Pagecontroller::class, 'adhambek'])->name('adhambek');
+Route::get('/home', [Pagecontroller::class, 'home'])->name('home');
+
 Route::get('/news', [Pagecontroller::class, 'news'])->name('news');
+
+Route::get('/advert', [Pagecontroller::class, 'advert'])->name('advert');
+
+Route::get('/blogSingle', [Pagecontroller::class, 'blogSingle'])->name('blogSingle');
+
+Route::get('/developedParty', [Pagecontroller::class, 'developedParty'])->name('developedParty');
+
+Route::get('/neighbourhood', [Pagecontroller::class, 'neighbourhood'])->name('neighbourhood');
+
+Route::get('/statistical', [Pagecontroller::class, 'statistical'])->name('statistical');
+
+Route::get('/portfolioDetails', [Pagecontroller::class, 'portfolioDetails'])->name('portfolioDetails');
+
+Route::get('/relationships', [Pagecontroller::class, 'relationships'])->name('relationships');
+
 
 Route::get('Avtomobil Yoqilg\'isi Savdo Faoliyatini Litsenziyalash', function(){
     return ('tegishli joyga yo\'naltiriladi');

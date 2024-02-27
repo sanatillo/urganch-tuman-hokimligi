@@ -6,8 +6,6 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Урганч туман ҳокимлиги расмий веб сайти</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
 
   <!-- Google Fonts -->
   <link
@@ -15,20 +13,17 @@
     rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <!-- TODO: shularni hammasini asset funksiyani ichina o'rab chiqasan man o'ragannin atib -->
-  
-  <link href="{{ asset("assets/vendor/animate.css/animate.min.css") }}" rel="stylesheet">
-  <link href="{{  asset("/assets/vendor/aos/aos.css") }}" rel="stylesheet">
-  <link href="{{ asset("assets/vendor/bootstrap/css/bootstrap.min.css") }}" rel="stylesheet">
-  <link href="{{ asset("assets/vendor/bootstrap-icons/bootstrap-icons.css")}}" rel="stylesheet">
-  <link href="{{ asset("assets/vendor/boxicons/css/boxicons.min.css")}}" rel="stylesheet">
-  <link href= "{{ asset("assets/vendor/glightbox/css/glightbox.min.css")}}" rel="stylesheet">
-  <link href= "{{ asset("assets/vendor/remixicon/remixicon.css")}}" rel="stylesheet">
-  <link href= "{{ asset("assets/vendor/swiper/swiper-bundle.min.css")}}" rel="stylesheet">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
   <!-- Template Main CSS File -->
-  <link href="{{ asset("assets/css/style.css") }}" rel="stylesheet">
+  <link href="assets/css/style.css" rel="stylesheet">
 
 </head>
 
@@ -210,14 +205,14 @@
         <div class="col-lg-4">
           <div class="card">
             <img class="card-img-top" alt="...">
-            <div class="card-body">
+            <div class="card-body ">
               <h5 class="card-title">Card title</h5>
               <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
                 content.</p>
             </div>
           </div>
         </div>
-        <!-- <div class="col-lg-4">
+        <div class="col-lg-4">
           <div class="card">
             <img class="card-img-top" alt="...">
             <div class="card-body ">
@@ -266,7 +261,7 @@
                 content.</p>
             </div>
           </div>
-        </div> -->
+        </div>
     </section>
 
     <!-- ======= Contact Section ======= -->
@@ -307,7 +302,7 @@
 
           <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
 
-            <form action="" method="post" role="form" class="php-email-form">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Исм" required>
@@ -394,17 +389,58 @@
       class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <!-- TODO: shularni hammasini asset funksiyani ichina o'rab chiqasan man o'ragannin atib -->
-  <script src="{{ asset("assets/vendor/aos/aos.js")}}"></script>
-  <script src="{{ asset("assets/vendor/bootstrap/js/bootstrap.bundle.min.js") }}"></script>
-  <script src="{{ asset("assets/vendor/glightbox/js/glightbox.min.js")}}"></script>
-  <script src="{{ asset("assets/vendor/isotope-layout/isotope.pkgd.min.js")}}"></script>
-  <script src="{{ asset("assets/vendor/swiper/swiper-bundle.min.js")}}"></script>
-  <script src="{{ asset("assets/vendor/php-email-form/validate.js")}}"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="{{ asset("assets/js/main.js") }}"></script>
-  <script src="{{ asset("assets/js/getJson.js")}}"></script>
+  <script src="assets/js/main.js"></script>
+  <script>
+    function posts() {
+      $.ajax({
+        url: 'http://127.0.0.1:8000/api/index',
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+          console.log("Posts : ", data.posts)
+        },
+        error: function () {
+          alert("Xatolik yuz berdi");
+        }
+      })
+    }
+
+    document.addEventListener("DOMContentLoaded", posts);
+
+
+    // function showFirstPost() {
+    $.ajax({
+      url: 'http://127.0.0.1:8000/api/index',
+      type: "GET",
+      dataType: "json",
+      success: function (data) {
+        let title = document.querySelectorAll(".card-title"),
+          shortContent = document.querySelectorAll(".card-text"),
+          image = document.querySelectorAll(".card-img-top");
+
+        for (let i = 0; i < title.length; i++) {
+          title[i].innerHTML = data.posts[i].title;
+          shortContent[i].innerHTML = data.posts[i].short_content;
+          image[i].src = data.posts[i].photo_path;
+        }
+      },
+      error: function () {
+        alert("Xatolik yuz berdi");
+      }
+    })
+    // }
+
+  </script>
 
 </body>
 
