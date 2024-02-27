@@ -15,18 +15,20 @@
     rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-  <link href="../public/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="../public/assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="../public/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="../public/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="../public/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="../public/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="../public/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="../public/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- TODO: shularni hammasini asset funksiyani ichina o'rab chiqasan man o'ragannin atib -->
+  
+  <link href="{{ asset("assets/vendor/animate.css/animate.min.css") }}" rel="stylesheet">
+  <link href="{{  asset("/assets/vendor/aos/aos.css") }}" rel="stylesheet">
+  <link href="{{ asset("assets/vendor/bootstrap/css/bootstrap.min.css") }}" rel="stylesheet">
+  <link href="{{ asset("assets/vendor/bootstrap-icons/bootstrap-icons.css")}}" rel="stylesheet">
+  <link href="{{ asset("assets/vendor/boxicons/css/boxicons.min.css")}}" rel="stylesheet">
+  <link href= "{{ asset("assets/vendor/glightbox/css/glightbox.min.css")}}" rel="stylesheet">
+  <link href= "{{ asset("assets/vendor/remixicon/remixicon.css")}}" rel="stylesheet">
+  <link href= "{{ asset("assets/vendor/swiper/swiper-bundle.min.css")}}" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
   <!-- Template Main CSS File -->
-  <link href="../public/assets/css/style.css" rel="stylesheet">
+  <link href="{{ asset("assets/css/style.css") }}" rel="stylesheet">
 
 </head>
 
@@ -155,7 +157,7 @@
           <h2 class="animate__animated animate__fadeInDown">Янгиликлар</h2>
           <p class="animate__animated animate__fadeInUp">Призидентимиз карорлари ва конунларидан хабардор бўлинг.
             Урганч Туманида рўй бераетган янгиликлар, юзага келган муамолар ва ечимлардан бохабар бўлинг.</p>
-          <a href="#" class="btn-get-started animate__animated animate__fadeInUp scrollto" onclick="posts()">Кўпрок билиш</a>
+          <a href="news.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Кўпрок билиш</a>
         </div>
       </div>
 
@@ -392,15 +394,18 @@
       class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="../public/assets/vendor/aos/aos.js"></script>
-  <script src="../public/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../public/assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="../public/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="../public/assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="../public/assets/vendor/php-email-form/validate.js"></script>
+  <!-- TODO: shularni hammasini asset funksiyani ichina o'rab chiqasan man o'ragannin atib -->
+  <script src="{{ asset("assets/vendor/aos/aos.js")}}"></script>
+  <script src="{{ asset("assets/vendor/bootstrap/js/bootstrap.bundle.min.js") }}"></script>
+  <script src="{{ asset("assets/vendor/glightbox/js/glightbox.min.js")}}"></script>
+  <script src="{{ asset("assets/vendor/isotope-layout/isotope.pkgd.min.js")}}"></script>
+  <script src="{{ asset("assets/vendor/swiper/swiper-bundle.min.js")}}"></script>
+  <script src="{{ asset("assets/vendor/php-email-form/validate.js")}}"></script>
 
   <!-- Template Main JS File -->
-  <script src="../public/assets/js/main.js"></script>
+  <script src="{{ asset("assets/js/main.js") }}"></script>
+  <script src="{{ asset("assets/js/getJson.js")}}"></script>
+
 </body>
 
 </html>

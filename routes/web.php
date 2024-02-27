@@ -157,6 +157,11 @@ Route::get('Transport Xizmatlarini Tashkil Etish', function(){
     return ('tegishli joyga yo\'naltiriladi');
 });
 
+
+
+Route::get('/adhambek', [Pagecontroller::class, 'adhambek'])->name('adhambek');
+Route::get('/news', [Pagecontroller::class, 'news'])->name('news');
+
 Route::get('Avtomobil Yoqilg\'isi Savdo Faoliyatini Litsenziyalash', function(){
     return ('tegishli joyga yo\'naltiriladi');
 });

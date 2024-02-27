@@ -16,4 +16,8 @@ class Pagecontroller extends Controller
         return view('news');
     }
 
+    public function adhambek(){
+        return view("adhambek");
+    }
+
 }

@@ -6,6 +6,6 @@ use App\Http\Controllers\ApiController;
 
 Route::get('data/{id?}',[ApiController::class, 'getData']);
 
-Route::get('/Bosh sahifa', [ApiController ::class, 'index'])->name('home');
+Route::get('/index', [ApiController::class, 'index'])->name('posts');
 
 // Route::post('addDAta',[ApiController::class, 'addData'];
