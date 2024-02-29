@@ -165,8 +165,6 @@ Route::get('/news', [Pagecontroller::class, 'news'])->name('news');
 
 Route::get('/advert', [Pagecontroller::class, 'advert'])->name('advert');
 
-Route::get('/blogSingle', [Pagecontroller::class, 'blogSingle'])->name('blogSingle');
-
 Route::get('/developedParty', [Pagecontroller::class, 'developedParty'])->name('developedParty');
 
 Route::get('/neighbourhood', [Pagecontroller::class, 'neighbourhood'])->name('neighbourhood');

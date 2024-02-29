@@ -15,18 +15,18 @@
         rel="stylesheet">
 
     <!-- Vendor CSS Files -->
-    <link rel="stylesheet" href="../public/assets/vendor/animate.css/animate.min.css">
-    <link href="../public/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-    <link href="../public/assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="../public/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="../public/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="../public/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="../public/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="../public/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="../public/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/vendor/animate.css/animate.min.css">
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
     <!-- Template Main CSS File -->
-    <link href="../public/assets/css/style.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -380,15 +380,15 @@
             class="bi bi-arrow-up-short"></i></a>
 
     <!-- Vendor JS Files -->
-    <script src="../public/assets/vendor/aos/aos.js"></script>
-    <script src="../public/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="../public/assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="../public/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="../public/assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="../public/assets/vendor/php-email-form/validate.js"></script>
+    <script src="assets/vendor/aos/aos.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+    <script src="assets/vendor/php-email-form/validate.js"></script>
 
     <!-- Template Main JS File -->
-    <script src="../public/assets/js/main.js"></script>
+    <script src="assets/js/main.js"></script>
 
 </body>
 
