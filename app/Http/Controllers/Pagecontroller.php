@@ -9,7 +9,7 @@ class Pagecontroller extends Controller
 {
     public function index()
     {
-        $posts = Post::all();
+        $posts = Post::latest()->limit(6)->get();
         return view('index')->with('posts', $posts);
     }
     public function news()

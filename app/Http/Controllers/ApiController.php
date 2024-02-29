@@ -13,8 +13,9 @@ class ApiController extends Controller
     }
     public function index()
     {
-        $posts = Post::all();
+        $posts = Post::latest()->limit(6)->get();
         return response()->json([
+            // return view('welcome', compact('posts'));
             "posts" => $posts
         ]);
     }

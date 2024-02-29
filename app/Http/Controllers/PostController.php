@@ -13,7 +13,7 @@ class PostController extends Controller
     public function index()
     {
         $posts = Post::all();
-        return view('new.news')->with('posts', $posts);
+        return view('news')->with('posts', $posts);
     }
 
     /**

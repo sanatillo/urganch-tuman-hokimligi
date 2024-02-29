@@ -6,6 +6,8 @@
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>Урганч туман ҳокимлиги расмий веб сайти</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
   <!-- Google Fonts -->
   <link
@@ -21,9 +23,10 @@
   <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
 
 </head>
 
@@ -152,7 +155,7 @@
           <h2 class="animate__animated animate__fadeInDown">Янгиликлар</h2>
           <p class="animate__animated animate__fadeInUp">Призидентимиз карорлари ва конунларидан хабардор бўлинг.
             Урганч Туманида рўй бераетган янгиликлар, юзага келган муамолар ва ечимлардан бохабар бўлинг.</p>
-          <a href="news.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Кўпрок билиш</a>
+          <a href="#" class="btn-get-started animate__animated animate__fadeInUp scrollto" onclick="posts()">Кўпрок билиш</a>
         </div>
       </div>
 
@@ -196,67 +199,72 @@
       </div> -->
 
     <!-- ======= Portfoio Section ======= -->
-    <section id="portfolio" class="portfoio container">
-      <div class="section-title">
+    <section id="portfolio" class="portfoio container ">
+      <div class="section-title ">
         <h2>Янгиликлар</h2>
       </div>
 
       <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col-lg-4">
-            <div class="card">
-              <img class="card-img-top">
-              <div class="card-body ">
-                <h5 class="card-title">Title</h5>
-                <p class="card-text">Short Context</p>
-              </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content.</p>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="card">
-              <img class="card-img-top">
-              <div class="card-body ">
-                <h5 class="card-title">Title</h5>
-                <p class="card-text">Short Context</p>
-              </div>
+        </div>
+        <!-- <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" alt="...">
+            <div class="card-body ">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content.</p>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="card">
-              <img class="card-img-top">
-              <div class="card-body ">
-                <h5 class="card-title">Title</h5>
-                <p class="card-text">Short Context</p>
-              </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" alt="...">
+            <div class="card-body ">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content.</p>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="card">
-              <img class="card-img-top">
-              <div class="card-body ">
-                <h5 class="card-title">Title</h5>
-                <p class="card-text">Short Context</p>
-              </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" alt="...">
+            <div class="card-body  ">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content.</p>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="card">
-              <img class="card-img-top">
-              <div class="card-body ">
-                <h5 class="card-title">Title</h5>
-                <p class="card-text">Short Context</p>
-              </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" alt="...">
+            <div class="card-body ">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content.</p>
             </div>
           </div>
-          <div class="col-lg-4">
-            <div class="card">
-              <img class="card-img-top">
-              <div class="card-body ">
-                <h5 class="card-title">Title</h5>
-                <p class="card-text">Short Context</p>
-              </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="card">
+            <img class="card-img-top" alt="...">
+            <div class="card-body ">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
+                content.</p>
             </div>
           </div>
-      </div>
+        </div> -->
     </section>
 
     <!-- ======= Contact Section ======= -->
@@ -297,7 +305,7 @@
 
           <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Исм" required>
@@ -384,19 +392,15 @@
       class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="/assets/vendor/aos/aos.js"></script>
+  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/getJson.js"></script>
-
+  <script src="/assets/js/getJson.js"></script>
 </body>
 
 </html>

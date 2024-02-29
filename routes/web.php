@@ -23,6 +23,8 @@ Route::get('/', function(){
     return redirect('/Bosh sahifa');
 });
 
+// Route::prefix
+
 Route::get('Tuman hokimligi/tuman hokimligi apparati',function(){ //tuman hokimligi
     return ('tuman hokimligi apparati (jadval)');
 })->name('apparati');
@@ -71,13 +73,13 @@ Route::get('Tuman hokimligi/Manzil',function(){
     return ('google maps');
 });
 //next//    
-Route::resource('/yangiliklar', PostController::class);
+Route::resource('Tuman haqida/yangiliklar', PostController::class);
 
-Route::get('Tender Va E\'lonlar',function(){
+Route::get('Tuman haqida/Tender Va E\'lonlar',function(){
     return ('rasm tagida izohlar, rasmlar bir qatorda 3 ta ustunda joylashadi');
 });
 
-Route::get('Tuman Xaqida Malumot', function(){
+Route::get('Tuman Haqida Malumot', function(){
     return ('wikipediya tarzda malumotlar yoziladi');
 });
 
