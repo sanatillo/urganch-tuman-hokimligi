@@ -26,7 +26,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 
   <!-- Template Main CSS File -->
-  <link href="../public/assets/css/style.css" rel="stylesheet">
+  <link href="/assets/css/style.css" rel="stylesheet">
 
 </head>
 
@@ -77,7 +77,7 @@
             <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Туман ҳақида
             </a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="news.html">Янгиликлар</a></li>
+              <li><a class="dropdown-item" href="{{route('yangiliklar.index')}}">Янгиликлар</a></li>
               <li><a class="dropdown-item" href="advert.html">Тендер ва эълонлар</a></li>
               <li><a class="dropdown-item" href="news.html">Туман ҳақида маълумот</a></li>
               <li><a class="dropdown-item" href="news.html">Туман ташкилотлари</a></li>
@@ -392,15 +392,15 @@
       class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="../public/assets/vendor/aos/aos.js"></script>
-  <script src="../public/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="../public/assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="../public/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="../public/assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="../public/assets/vendor/php-email-form/validate.js"></script>
+  <script src="/assets/vendor/aos/aos.js"></script>
+  <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="/assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
-  <script src="../public/assets/js/main.js"></script>
+  <script src="/assets/js/getJson.js"></script>
 </body>
 
 </html>
