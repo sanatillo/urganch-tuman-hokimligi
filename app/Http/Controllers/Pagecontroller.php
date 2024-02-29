@@ -27,11 +27,6 @@ class Pagecontroller extends Controller
         return view("advert");
     }
 
-    public function blogSingle()
-    {
-        return view("blogSingle");
-    }
-
     public function developedParty()
     {
         return view("developedParty");

@@ -75,7 +75,7 @@
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="{{route('yangiliklar.index')}}">Янгиликлар</a></li>
-              <li><a class="dropdown-item" href="advert.html">Тендер ва эълонлар</a></li>
+              <li><a class="dropdown-item" href="advert.blade.php">Тендер ва эълонлар</a></li>
               <li><a class="dropdown-item" href="news.html">Туман ҳақида маълумот</a></li>
               <li><a class="dropdown-item" href="news.html">Туман ташкилотлари</a></li>
               <li><a class="dropdown-item" href="neighbourhood.html">Маҳалла фуқоралар йиғинлари</a></li>
@@ -196,72 +196,67 @@
       </div> -->
 
     <!-- ======= Portfoio Section ======= -->
-    <section id="portfolio" class="portfoio container ">
-      <div class="section-title ">
+    <section id="portfolio" class="portfoio container">
+      <div class="section-title">
         <h2>Янгиликлар</h2>
       </div>
 
       <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div class="col-lg-4">
-          <div class="card">
-            <img class="card-img-top" alt="...">
-            <div class="card-body ">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content.</p>
+          <div class="col-lg-4">
+            <div class="card">
+              <img class="card-img-top">
+              <div class="card-body ">
+                <h5 class="card-title">Title</h5>
+                <p class="card-text">Short Context</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card">
-            <img class="card-img-top" alt="...">
-            <div class="card-body ">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content.</p>
+          <div class="col-lg-4">
+            <div class="card">
+              <img class="card-img-top">
+              <div class="card-body ">
+                <h5 class="card-title">Title</h5>
+                <p class="card-text">Short Context</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card">
-            <img class="card-img-top" alt="...">
-            <div class="card-body ">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content.</p>
+          <div class="col-lg-4">
+            <div class="card">
+              <img class="card-img-top">
+              <div class="card-body ">
+                <h5 class="card-title">Title</h5>
+                <p class="card-text">Short Context</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card">
-            <img class="card-img-top" alt="...">
-            <div class="card-body  ">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content.</p>
+          <div class="col-lg-4">
+            <div class="card">
+              <img class="card-img-top">
+              <div class="card-body ">
+                <h5 class="card-title">Title</h5>
+                <p class="card-text">Short Context</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card">
-            <img class="card-img-top" alt="...">
-            <div class="card-body ">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content.</p>
+          <div class="col-lg-4">
+            <div class="card">
+              <img class="card-img-top">
+              <div class="card-body ">
+                <h5 class="card-title">Title</h5>
+                <p class="card-text">Short Context</p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="card">
-            <img class="card-img-top" alt="...">
-            <div class="card-body ">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-                content.</p>
+          <div class="col-lg-4">
+            <div class="card">
+              <img class="card-img-top">
+              <div class="card-body ">
+                <h5 class="card-title">Title</h5>
+                <p class="card-text">Short Context</p>
+              </div>
             </div>
           </div>
-        </div>
+      </div>
     </section>
 
     <!-- ======= Contact Section ======= -->
@@ -389,8 +384,7 @@
       class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -400,47 +394,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script>
-    function posts() {
-      $.ajax({
-        url: 'http://127.0.0.1:8000/api/index',
-        type: "GET",
-        dataType: "json",
-        success: function (data) {
-          console.log("Posts : ", data.posts)
-        },
-        error: function () {
-          alert("Xatolik yuz berdi");
-        }
-      })
-    }
-
-    document.addEventListener("DOMContentLoaded", posts);
-
-
-    // function showFirstPost() {
-    $.ajax({
-      url: 'http://127.0.0.1:8000/api/index',
-      type: "GET",
-      dataType: "json",
-      success: function (data) {
-        let title = document.querySelectorAll(".card-title"),
-          shortContent = document.querySelectorAll(".card-text"),
-          image = document.querySelectorAll(".card-img-top");
-
-        for (let i = 0; i < title.length; i++) {
-          title[i].innerHTML = data.posts[i].title;
-          shortContent[i].innerHTML = data.posts[i].short_content;
-          image[i].src = data.posts[i].photo_path;
-        }
-      },
-      error: function () {
-        alert("Xatolik yuz berdi");
-      }
-    })
-    // }
-
-  </script>
+  <script src="assets/js/getJson.js"></script>
 
 </body>
 
