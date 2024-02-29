@@ -207,7 +207,7 @@
               <img class="card-img-top">
               <div class="card-body ">
                 <h5 class="card-title">Title</h5>
-                <p class="card-text">Short Context</p>
+                <p class="card-text">Short Context<a id="card-a" href="#">more</a></p>
               </div>
             </div>
           </div>
@@ -216,7 +216,7 @@
               <img class="card-img-top">
               <div class="card-body ">
                 <h5 class="card-title">Title</h5>
-                <p class="card-text">Short Context</p>
+                <p class="card-text">Short Context<a href="#">more</a></p>
               </div>
             </div>
           </div>
@@ -225,7 +225,7 @@
               <img class="card-img-top">
               <div class="card-body ">
                 <h5 class="card-title">Title</h5>
-                <p class="card-text">Short Context</p>
+                <p class="card-text">Short Context<a href="#">more</a></p>
               </div>
             </div>
           </div>
@@ -234,7 +234,7 @@
               <img class="card-img-top">
               <div class="card-body ">
                 <h5 class="card-title">Title</h5>
-                <p class="card-text">Short Context</p>
+                <p class="card-text">Short Context<a href="#">more</a></p>
               </div>
             </div>
           </div>
@@ -243,7 +243,7 @@
               <img class="card-img-top">
               <div class="card-body ">
                 <h5 class="card-title">Title</h5>
-                <p class="card-text">Short Context</p>
+                <p class="card-text">Short Context<a href="#">more</a></p>
               </div>
             </div>
           </div>
@@ -252,7 +252,7 @@
               <img class="card-img-top">
               <div class="card-body ">
                 <h5 class="card-title">Title</h5>
-                <p class="card-text">Short Context</p>
+                <p class="card-text">Short Context<a href="#">more</a></p>
               </div>
             </div>
           </div>
