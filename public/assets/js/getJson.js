@@ -1,22 +1,9 @@
-// cardTitle = document.createElement("h5"),
-// cardText = document.createElement("p")
+let a = document.createElement(a);
+// console.log(a);
 
-// insertedCardTitle = insertedCardBody.appendChild(cardTitle),
-// insertedCardText = insertedCardBody.appendChild(cardText)
-
-// insertedCardBody.classList.add("card-body");
-// insertedCardTitle.classList.add("card-title");
-// insertedCardText.classList.add("card-text");
-
-
-
-
-
-
-// insertedCardText[i].classList.add("card-text")
 function posts() {
     $.ajax({
-        url: 'http://127.0.0.1:8000/api/index',
+        url: 'http://127.0.0.1:8000/api/data',
         type: "GET",
         dataType: "json",
         success: function (data) {
@@ -32,7 +19,7 @@ document.addEventListener("DOMContentLoaded", posts);
 
 
 $.ajax({
-    url: 'http://127.0.0.1:8000/api/index',
+    url: 'http://127.0.0.1:8000/api/data',
     type: "GET",
     dataType: "json",
     success: function (data) {
@@ -52,7 +39,6 @@ $.ajax({
         //     insertedCardTitle = [],
         //     insertedCardText = [];
 
-        // for (let i = 0; i < 3; i++) {
 
             // generalCard[i] = document.createElement("div");
             // card[i] = document.createElement("div");
@@ -90,11 +76,6 @@ $.ajax({
                 title[i].innerHTML = data.posts[i].title;
                 image[i].src = data.posts[i].photo_path;
             }
-        
-        // }
-
-
-
     },
     error: function () {
         alert("Json was not found");

@@ -75,7 +75,7 @@
             </a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="{{route('yangiliklar.index')}}">Янгиликлар</a></li>
-              <li><a class="dropdown-item" href="advert.html">Тендер ва эълонлар</a></li>
+              <li><a class="dropdown-item" href="advert.blade.php">Тендер ва эълонлар</a></li>
               <li><a class="dropdown-item" href="news.html">Туман ҳақида маълумот</a></li>
               <li><a class="dropdown-item" href="news.html">Туман ташкилотлари</a></li>
               <li><a class="dropdown-item" href="neighbourhood.html">Маҳалла фуқоралар йиғинлари</a></li>
@@ -384,8 +384,7 @@
       class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-    integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>

@@ -15,7 +15,6 @@
     rel="stylesheet">
 
   <!-- Vendor CSS Files -->
-<<<<<<< HEAD
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -27,7 +26,6 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-=======
   <link href="/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
   <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
@@ -39,7 +37,6 @@
 
   <!-- Template Main CSS File -->
   <link href="/assets/css/style.css" rel="stylesheet">
->>>>>>> f1e5bbe734d3a0fcb7f045a8286c4ed4cf9b122a
 </head>
 
 <body>
@@ -364,7 +361,7 @@
       class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
-<<<<<<< HEAD
+
   <script src="assets/vendor/aos/aos.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -374,7 +371,6 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-=======
   <script src="/assets/vendor/aos/aos.js"></script>
   <script src="/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
   <script src="/assets/vendor/glightbox/js/glightbox.min.js"></script>
@@ -384,7 +380,6 @@
 
   <!-- Template Main JS File -->
   <script src="/assets/js/main.js"></script>
->>>>>>> f1e5bbe734d3a0fcb7f045a8286c4ed4cf9b122a
 
 </body>
 
