@@ -359,7 +359,7 @@
               <strong>E-mail:</strong> info@urganchhokimiyat.uz<br>
             </p>
           </div>
-          <div class="col-lg-6 col-md-6 footer-info">
+          <div class="col-lg-6 c ol-md-6 footer-info">
             <h3>Хакида<br></h3>
             <p>Хоразим Вилояти Урганч Тумани хокимлиги расмий веб-сайти ахборот тизими. Туманимизда юз бераетган
               янгиликлар ва фойдали хаволалар.</p>

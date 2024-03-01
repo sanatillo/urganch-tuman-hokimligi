@@ -66,7 +66,7 @@ $.ajax({
         
         let a = document.querySelector("#card-a");
 
-        for (let i = 0; i < 3; i++) {
+        for (let i = 0; i < 6; i++) {
             // imgPath.innerHTML = data.posts[i].photo_path;
             // titlejson.innerHTML = data.posts[i].title;
             // textJson.innerHTML = data.posts[i].short_content;

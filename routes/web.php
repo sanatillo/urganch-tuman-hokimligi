@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/Bosh sahifa', [Pagecontroller ::class, 'index'])->name('home');
+Route::get('/Bosh sahifa', [Pagecontroller ::class, 'home'])->name('home');
 
 Route::get('/', function(){
     return redirect('/Bosh sahifa');
