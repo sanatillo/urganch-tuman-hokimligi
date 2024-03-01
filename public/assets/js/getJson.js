@@ -71,7 +71,7 @@ $.ajax({
             // titlejson.innerHTML = data.posts[i].title;
             // textJson.innerHTML = data.posts[i].short_content;
             if (data.posts[i].short_content.length > 40) {
-                shortContent[i].innerHTML = `${data.posts[i].short_content.slice(0, 95)}...`;
+                shortContent[i].innerHTML = `${data.posts[i].short_content.slice(0, 95)}...` + "<a href='#'>more</a>";
             }
             title[i].innerHTML = data.posts[i].title;
             image[i].src = data.posts[i].photo_path;
