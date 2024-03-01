@@ -15,7 +15,6 @@ class ApiController extends Controller
     {
         $posts = Post::orderBy('id', 'desc')->limit(6)->get();
         return response()->json([
-            // return view('welcome', compact('posts'));
             "posts" => $posts
         ]);
     }
