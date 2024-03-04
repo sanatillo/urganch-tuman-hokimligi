@@ -52,16 +52,14 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li class="nav-item dropdown p-1">
-            <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Туман хокимлиги
-            </a>
+            <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Туман хокимлиги</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="news.html">Туман ҳокимлиги аппарати</a></li>
               <li><a class="dropdown-item" href="news.html">Бошқарув аппаратининг тузилмаси</a></li>
               <li><a class="dropdown-item" href="news.html">Қабул жадвали</a></li>
               <li><a class="dropdown-item" href="news.html">Ишонч ва ягона телефон рақамлари</a></li>
               <li><a class="dropdown-item" href="news.html">Ҳорижий ва халқаро ҳамкорлик алоқалари</a></li>
-              <li><a class="dropdown-item" href="relationships.html">Бошқа давлат органлари билан ўзаро муносабатлар</a>
-              </li>
+              <li><a class="dropdown-item" href="relationships.html">Бошқа давлат органлари билан ўзаро муносабатлар</a></li>
               <li><a class="dropdown-item" href="news.html">Маҳаллий ва халқаро битимлар, шартномалар</a></li>
               <li><a class="dropdown-item" href="news.html">Кун тартиби, иш режаси ва йиғилиш масалалари</a></li>
               <li><a class="dropdown-item" href="news.html">Электрон ҳукумат доирасида қилинаётган ишлар</a></li>
@@ -71,8 +69,7 @@
             </ul>
           </li>
           <li class="nav-item dropdown p-1">
-            <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Туман ҳақида
-            </a>
+            <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Туман ҳақида</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="{{route('yangiliklar.index')}}">Янгиликлар</a></li>
               <li><a class="dropdown-item" href="advert.blade.php">Тендер ва эълонлар</a></li>
@@ -88,8 +85,7 @@
             </ul>
           </li>
           <li class="nav-item dropdown p-1">
-            <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Электрон
-              хизматлар</a>
+            <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Электрон хизматлар</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="news.html">Мурожаатлар статистикаси</a></li>
               <li><a class="dropdown-item" href="news.html">Кўп бериладиган саволларга жавоблар</a></li>
@@ -99,34 +95,24 @@
               <li><a class="dropdown-item" href="news.html">Ҳаж ва Умра зиёратига бориш тартиби</a></li>
               <li><a class="dropdown-item" href="news.html">Бизнесни режалаштириш ва бошқариш</a></li>
               <li><a class="dropdown-item" href="news.html">Тадбиркорликни лицензиялаш</a></li>
-              <li><a class="dropdown-item bg-info" href="https://lex.uz/docs/-4486145?ONDATE=12.03.2022">Алкоголли
-                  савдофаолиятини лицензиялаш тартиби</a></li>
-              <li><a class="dropdown-item bg-info" href="https://lex.uz/ru/docs/-899322?ONDATE=29.12.2019">Улгуржи
-                  савдофаолиятини лицензиялаш</a></li>
-              <li><a class="dropdown-item bg-info" href="https://lex.uz/uz/docs/-6026643">Давлат харидларини амалга
-                  ошириш</a></li>
-              <li><a class="dropdown-item bg-info" href="https://lex.uz/docs/6694131">Транспорт хизматларини ташкил
-                  этиш</a></li>
+              <li><a class="dropdown-item bg-info" href="https://lex.uz/docs/-4486145?ONDATE=12.03.2022">Алкоголли савдофаолиятини лицензиялаш тартиби</a></li>
+              <li><a class="dropdown-item bg-info" href="https://lex.uz/ru/docs/-899322?ONDATE=29.12.2019">Улгуржи савдофаолиятини лицензиялаш</a></li>
+              <li><a class="dropdown-item bg-info" href="https://lex.uz/uz/docs/-6026643">Давлат харидларини амалга ошириш</a></li>
+              <li><a class="dropdown-item bg-info" href="https://lex.uz/docs/6694131">Транспорт хизматларини ташкил этиш</a></li>
               <li><a class="dropdown-item" href="news.html">Автомобил ёнилғиси савдо фаолиятини лицензиялаш</a></li>
-              <li><a class="dropdown-item bg-info" href="https://lex.uz/docs/-152653?ONDATE=26.10.2018%2000">Ер
-                  муносабатларини тартибга солиш</a></li>
+              <li><a class="dropdown-item bg-info" href="https://lex.uz/docs/-152653?ONDATE=26.10.2018%2000">Ер муносабатларини тартибга солиш</a></li>
               <li><a class="dropdown-item" href="news.html">Очиқ маълумотлар</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown p-1">
-            <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Меъёрий
-              ҳужжатлар</a>
+            <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Меъёрий ҳужжатлар</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item bg-info" href="https://lex.uz/uz/docs/-6396146">Президент фармон,
-                  қарорлари</a></li>
-              <li><a class="dropdown-item bg-info" href="https://lex.uz/acts/-1160432">Қонунчилик палатаси қарорлари</a>
-              </li>
-              <li><a class="dropdown-item bg-info" href="https://lex.uz/docs/-6020887?ONDATE=18.05.2022%2000">Вазирлар
-                  Маҳкамаси қарорлари</a></li>
+              <li><a class="dropdown-item bg-info" href="https://lex.uz/uz/docs/-6396146">Президент фармон, қарорлари</a></li>
+              <li><a class="dropdown-item bg-info" href="https://lex.uz/acts/-1160432">Қонунчилик палатаси қарорлари</a></li>
+              <li><a class="dropdown-item bg-info" href="https://lex.uz/docs/-6020887?ONDATE=18.05.2022%2000">Вазирлар Маҳкамаси қарорлари</a></li>
               <li><a class="dropdown-item" href="news.html">Туман ҳокими қарорлари</a></li>
               <li><a class="dropdown-item" href="news.html">Туман ҳокими фармойишлари</a></li>
-              <li><a class="dropdown-item bg-info" href="https://lex.uz/acts/-1392614">Ўз кучини йўқотган меъёрий
-                  ҳужжатлари</a></li>
+              <li><a class="dropdown-item bg-info" href="https://lex.uz/acts/-1392614">Ўз кучини йўқотган меъёрий ҳужжатлари</a></li>
               <li><a class="dropdown-item" href="news.html">Туман ҳокимлиги иш юритиш йўриқномаси</a></li>
               <li><a class="dropdown-item" href="news.html">Расмий маърузалар</a></li>
               <li><a class="dropdown-item" href="developed_party.html">Ишлаб чиқилган чора тадбирлар</a></li>
@@ -348,7 +334,7 @@
     </div>
 
     <div class="footer-top">
-      <div class="container">
+      < class="container">
         <div class="row">
           <div class="col-lg-6 col-md-6 footer-contact">
             <h4>Биз билан богланиш</h4>
@@ -374,8 +360,7 @@
             </div>
           </div>
 
-        </div>
-      </div>
+        </div> 
     </div>
   </footer><!-- End Footer -->
 
