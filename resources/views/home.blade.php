@@ -379,7 +379,52 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/getJson.js"></script>
+  <script>
+    function posts() {
+    $.ajax({
+        url: 'http://127.0.0.1:8000/api/data',
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            console.log("Posts : ", data.posts)
+        },
+        error: function () {
+            alert("Xatolik yuz berdi");
+        }
+    })
+  }
+
+  document.addEventListener("DOMContentLoaded", posts);
+
+
+$.ajax({
+    url: 'http://127.0.0.1:8000/api/data',
+    type: "GET",
+    dataType: "json",
+    success: function (data) {
+
+        // data for news
+        let title = document.querySelectorAll(".card-title"),
+            shortContent = document.querySelectorAll(".card-text"),
+            image = document.querySelectorAll(".card-img-top");
+
+
+        for (let i = 0; i < 6; i++) {
+          if (shortContent[i].short_content > 18) {
+            shortContent[i].innerHTML = `${data.posts[i].short_content.slice(0, 100)}...<a></a>`;
+          }
+            title[i].innerHTML = data.posts[i].title;
+            image[i].src = data.posts[i].photo_path;
+        }
+
+    },
+    error: function () {
+        alert("Data was not found");
+    }
+})
+
+
+  </script>
 
 </body>
 
