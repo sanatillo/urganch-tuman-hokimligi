@@ -241,7 +241,7 @@
    */
   const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
-  });
+  }); 
 
   /**
    * Initiate glightbox 

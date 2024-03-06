@@ -36,12 +36,12 @@
         <i class="bi bi-envelope-fill"></i>info@urganchhokimiyat.uz
         <i class="bi bi-phone-fill phone-icon"></i> +998 (62) 352-28-43
       </div>
-      <div class="search-form">
+      <!-- <div class="search-form">
         <form action="">
           <input type="text">
           <button type="submit"><i class="bi bi-search"></i></button>
         </form>
-      </div>
+      </div> -->
     </div>
   </div>
 
@@ -72,7 +72,7 @@
             <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Туман ҳақида</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="{{route('yangiliklar.index')}}">Янгиликлар</a></li>
-              <li><a class="dropdown-item" href="advert.blade.php">Тендер ва эълонлар</a></li>
+              <li><a class="dropdown-item" href="{{route('advert')}}">Тендер ва эълонлар</a></li>
               <li><a class="dropdown-item" href="news.html">Туман ҳақида маълумот</a></li>
               <li><a class="dropdown-item" href="news.html">Туман ташкилотлари</a></li>
               <li><a class="dropdown-item" href="neighbourhood.html">Маҳалла фуқоралар йиғинлари</a></li>
@@ -146,42 +146,8 @@
   </section>
 
   <main id="main">
-    <!-- ======= Clients Section ======= -->
-    <!-- <section id="clients" class="clients"> -->
-    <!-- <div class="container-fluid" data-aos="zoom-in">
-        <div class="clients-slider swiper">
-          <div class="swiper-wrapper align-items-center">
-            <a class="swiper-slide"><img class="img-fluid " src="./assets/img/uz-gerb.png"><a
-                href="https://president.uz/uz" class="a-text">
-                <pre>Ўзбекистан Республикаси <br>Расмий веб-сайти</pre>
-              </a></a>
-            <a class="swiper-slide"><img class="img-fluid " src="./assets/img/uz-qabulhona.jpg"><a
-                href="https://pm.gov.uz/uz" class="a-text">
-                <pre>Ўзбекистан Республикаси <br>Президентнинг Виртуал Кабулхонаси</pre>
-              </a></a>
-            <a class="swiper-slide"><img class="img-fluid " src="./assets/img/uz-partali.jpg"><a
-                href="https://gov.uz/uz/" class="a-text">
-                <pre>Ўзбекистан Республикаси <br>Хукумат Портали</pre>
-              </a></a>
-            <a class="swiper-slide"><img class="img-fluid " src="./assets/img/uz-gerb1.png"><a href="https://senat.uz/"
-                class="a-text">
-                <pre>Ўзбекистан Республикаси <br>Олий Мажлисининг Сенати</pre>
-              </a></a>
-            <a class="swiper-slide"><img class="img-fluid " src="./assets/img/uz-map.png"><a
-                href="https://parliament.gov.uz/" class="a-text">
-                <pre>Ўзбекистан Республикаси <br>Олий Мажлисининг Конунчилик Палатаси</pre>
-              </a></a>
-            <a class="swiper-slide"><img class="img-fluid " src="./assets/img/uz-gerbandflag.png"><a
-                href="https://constitution.uz/oz" class="a-text">
-                <pre>Ўзбекистан Республикаси <br>Конституцияси</pre>
-              </a></a>
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div> -->
-
-    <!-- ======= Portfoio Section ======= -->
+  
+  <!-- ======= Portfoio Section ======= -->
     <section id="portfolio" class="portfoio container">
       <div class="section-title">
         <h2>Янгиликлар</h2>
@@ -190,7 +156,7 @@
       <div class="row row-cols-1 row-cols-md-3 g-4">
           <div class="col-lg-4">
             <div class="card">
-              <img class="card-img-top">
+              <img class="card-img-top img-fluid">
               <div class="card-body ">
                 <h5 class="card-title">Title</h5>
                 <p class="card-text">Short Context</p>
@@ -334,7 +300,7 @@
     </div>
 
     <div class="footer-top">
-      < class="container">
+      <div class="container">
         <div class="row">
           <div class="col-lg-6 col-md-6 footer-contact">
             <h4>Биз билан богланиш</h4>
@@ -408,13 +374,12 @@ $.ajax({
             shortContent = document.querySelectorAll(".card-text"),
             image = document.querySelectorAll(".card-img-top");
 
-
         for (let i = 0; i < 6; i++) {
-          if (shortContent[i].short_content > 18) {
-            shortContent[i].innerHTML = `${data.posts[i].short_content.slice(0, 100)}...<a></a>`;
+          if (data.posts[i].short_content.length > 50) {
+          shortContent[i].innerHTML = `${data.posts[i].short_content.slice(0, 100)}...<a href="#">more</a>`;
           }
-            title[i].innerHTML = data.posts[i].title;
-            image[i].src = data.posts[i].photo_path;
+          title[i].innerHTML = data.posts[i].title;
+          image[i].src = data.posts[i].photo_path;
         }
 
     },
