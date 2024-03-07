@@ -13,8 +13,7 @@
         <link
             href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
             rel="stylesheet">
-
-<<<<<<< HEAD
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo a nostrum alias repellendus. Doloremque labore tempora hic vitae magnam commodi?
     <!-- Vendor CSS Files -->
     <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
     <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -28,7 +27,6 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
 </head>
-=======
         <!-- Vendor CSS Files -->
         <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
         <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -42,7 +40,6 @@
         <!-- Template Main CSS File -->
         <link href="assets/css/style.css" rel="stylesheet">
     </head>
->>>>>>> 287238248e2a7888f222978315d3a81c0405e0c1
 
     <body>
 
@@ -56,7 +53,6 @@
             </div>
         </div>
 
-<<<<<<< HEAD
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top d-flex align-items-center header-inner-pages">
         <div class="container d-flex align-items-center justify-content-start">
@@ -138,7 +134,7 @@
         </div>
     </header><!-- End Header -->
 
-    <main id="main">
+    {{-- <main id="main">
 
         <!-- ======= Breadcrumbs ======= -->
         <section id="breadcrumbs" class="breadcrumbs">
@@ -149,7 +145,6 @@
                     <li><a href="news.html">Янгиликлар</a></li>
                 </ol>
                 <h2>Янгиликлар</h2>
-=======
         <!-- ======= Header ======= -->
         <header id="header" class="fixed-top d-flex align-items-center header-inner-pages">
             <div class="container d-flex align-items-center justify-content-start">
@@ -244,10 +239,9 @@
                     </ul>
                     <i class="bi bi-list mobile-nav-toggle"></i>
                 </nav><!-- .navbar -->
->>>>>>> 287238248e2a7888f222978315d3a81c0405e0c1
 
             </div>
-        </header><!-- End Header -->
+        </header><!-- End Header --> --}}
 
         <main id="main">
 
@@ -261,11 +255,9 @@
                     </ol>
                     <h2>Янгиликлар</h2>
 
-<<<<<<< HEAD
 
                     
                     </div><!-- End blog entries list -->
-=======
                 </div>
             </section><!-- End Breadcrumbs -->
 
@@ -363,7 +355,6 @@
 
 
                         </div><!-- End blog entries list -->
->>>>>>> 287238248e2a7888f222978315d3a81c0405e0c1
 
                         <div class="col-lg-4">
 
@@ -452,7 +443,6 @@
         <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
         <script src="assets/vendor/php-email-form/validate.js"></script>
 
-<<<<<<< HEAD
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
     <script>
@@ -498,10 +488,6 @@
     })
 
     </script>
-=======
-        <!-- Template Main JS File -->
-        <script src="assets/js/main.js"></script>
->>>>>>> 287238248e2a7888f222978315d3a81c0405e0c1
 
     </body>
 
