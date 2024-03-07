@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Post;
+use App\Models\Apparat;
 use Illuminate\Http\Request;
 
 class ApiController extends Controller
@@ -16,6 +17,13 @@ class ApiController extends Controller
         $posts = Post::orderBy('id', 'desc')->limit(6)->get();
         return response()->json([
             "posts" => $posts
+        ]);
+    }
+    public function apparat()
+    {
+        $apparats = Apparat::limit(6)->get();
+        return response()->json([
+            "apparats" => $apparats
         ]);
     }
 }
