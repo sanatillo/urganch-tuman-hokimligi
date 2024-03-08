@@ -71,7 +71,7 @@
           <li class="nav-item dropdown p-1">
             <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Туман ҳақида</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="{{route('yangiliklar.index')}}">Янгиликлар</a></li>
+              <li><a class="dropdown-item" href="{{route('news')}}">Янгиликлар</a></li>
               <li><a class="dropdown-item" href="{{route('advert')}}">Тендер ва эълонлар</a></li>
               <li><a class="dropdown-item" href="news.html">Туман ҳақида маълумот</a></li>
               <li><a class="dropdown-item" href="news.html">Туман ташкилотлари</a></li>

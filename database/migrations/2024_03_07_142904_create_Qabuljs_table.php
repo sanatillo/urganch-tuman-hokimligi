@@ -11,15 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('Apparats', function (Blueprint $table) {
+        Schema::create('Qabuljs', function (Blueprint $table) {
             $table->id();
-            $table->string('ismi');
-            $table->string('kasbi');
-            $table->string('photo_path');
-            $table->string('telnumber');
-            $table->string('masuliyati');   
-            $table->string('email');    
-            $table->timestamps();
+            $table->integer('nomer');
+            $table->string('sana_vaqti');
+            $table->string('qabul_mahalla_nomi',50);
+            $table->string('qabul_joyi_nomi', 50);
         });
     }
 
@@ -28,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('Apparats');
+        Schema::dropIfExists('Qabuljs');
     }
 };

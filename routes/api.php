@@ -12,7 +12,7 @@ Route::get('/apparat', [ApiController::class, 'apparat'])->name('apparats');
 
 Route::get('/apparat/{id}', [ApiController::class, 'apparat']);
 
+Route::get('/qabulj',[ApiController::class, 'qabulj'])->name('qabulj');
 
 
 
-// Route::post('addDAta',[ApiController::class, 'addData'];

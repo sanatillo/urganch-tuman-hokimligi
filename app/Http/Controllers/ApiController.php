@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Post;
 use App\Models\Apparat;
+use App\Models\Qabulj;
 use Illuminate\Http\Request;
 
 class ApiController extends Controller
@@ -24,6 +25,13 @@ class ApiController extends Controller
         $apparats = Apparat::limit(6)->get();
         return response()->json([
             "apparats" => $apparats
+        ]);
+    }
+    public function qabulj()
+    {
+        $qabulj = Qabulj::get();
+        return response()->json([
+            'qabulj' =>$qabulj
         ]);
     }
 }

@@ -39,7 +39,7 @@ class PostSeeder extends Seeder
             🔹доимий аҳолиси сони (2024 йил 1 январь ҳолатига) – 1 995,6 минг киши',
             'short_content' => '📊 Статистика агентлигининг дастлабки маълумотларига кўра, 2023 йилда Хоразм вилоятининг ижтимоий-иқтисодий ҳолати рақамларда: ',
             'views_count'=>121,
-            'photo_path'=>''
+            'photo_path'=>'/image.jpg'
         ]);
         DB::table('Posts')->insert([
             'title' =>  'Urganch_tumanida_bajarilgan_qurilish_ishlari',
@@ -51,7 +51,7 @@ class PostSeeder extends Seeder
                 Jami qurilish ishlarining 51,9 %i (338,1 mlrd so‘mi) kichik korxona va mikrofirmalar hissasiga to‘g‘ri kelgan.',
             'short_content' => '📊  2023- yilning yanvar-dekabr oylarida Urganch tumanida  650,9 mlrd so‘mlik qurilish ishlari amalga oshirilgan.',
             'views_count'=>144,
-            'photo_path'=>''
+            'photo_path'=>'/image.jpg'
         ]);
         DB::table('Posts')->insert([
             'title' =>  'Xorazm_viloyatida_qishloq,_o‘rmon_va_baliqchilik_xo‘jaligida_qancha_qo‘shilgan_qiymat_yaratildi?',
@@ -60,7 +60,7 @@ class PostSeeder extends Seeder
             📊 2023- yil yakunlariga ko‘ra, Xorazm viloyati bo‘yicha qishloq, o‘rmon va baliqchilik xo‘jaligida yaratilgan yalpi qo‘shilgan qiymat hajmi 16 252,2 mlrd so‘mni tashkil etdi va 2022- yilga nisbatan 4,0 % ga o‘sdi.',
             'short_content' => '📊  2023- yil yakunlariga ko‘ra, Xorazm viloyati bo‘yicha qishloq, o‘rmon va baliqchilik xo‘jaligida ',
             'views_count'=>91,
-            'photo_path'=>''
+            'photo_path'=>'/image.jpg'
         ]);
         DB::table('Posts')->insert([
             'title' =>  'Eng_faol_ijtimoiy_ko\'rik tanlovi_tashkil_etiladi',
@@ -71,7 +71,7 @@ class PostSeeder extends Seeder
             Ko‘rik-tanlov haqidagi batafsil ma’lumot bilan bu yerda (https://lex.uz/uz/docs/-6789178) tanishishingiz mumkin.',
             'short_content' => '🖋 Vazirlar Mahkamasining 2024-yil 3-fevraldagi qaroriga muvofiq, “Eng faol ijtimoiy xodim” ko‘rik-tanlovini tashkil etish chora-tadbirlari to‘g‘risida”gi nizom qabul qilindi.  ',
             'views_count'=>110,
-            'photo_path'=>''
+            'photo_path'=>'/image.jpg'
         ]);
         DB::table('Posts')->insert([
             'title' =>  'Urganch_tumanida_qancha_hajmdagi_chorvachilik_mahsulotlari_ishlab_chiqarilgan?',
@@ -84,7 +84,7 @@ class PostSeeder extends Seeder
                 ovlangan baliq – 924 tonna.',
             'short_content' => '📊 2023- yilning yanvar-dekabr oylarida Urganch tumanida  hajmi 1 658.3 mlrd so‘mlik chorvachilik mahsulotlari ishlab chiqarildi ',
             'views_count'=>101,
-            'photo_path'=>''
+            'photo_path'=>'/image.jpg'
         ]);
         DB::table('Posts')->insert([
             'title' =>  'Urganch_tumanida_qancha_hajmdagi_xorijiy_investitsiya_o‘zlashtirildi?',
@@ -92,7 +92,7 @@ class PostSeeder extends Seeder
                 Shu turdagi investitsiyalarning tarkibida to‘g‘ridan-to‘g‘ri xorijiy investitsiyalar hajmi 120,0 mlrd so‘mni, kafolatlanmagan kreditlar 818,7 mlrd so‘mni tashkil etgan.',
             'short_content' => '📊  2023- yilning  yanvar-dekabr oylarida Urganch tumanida asosiy kapitalga 1 445,0 mlrd so‘mlik investitsiya o‘zlashtirilgan bo‘lib',
             'views_count'=>129,
-            'photo_path'=>''
+            'photo_path'=>'/image.jpg'
         ]);
     }
 }
