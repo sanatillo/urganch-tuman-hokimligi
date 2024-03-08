@@ -370,8 +370,10 @@
 
   document.addEventListener("DOMContentLoaded", posts);
 
+  const myUrl =  'http://127.0.0.1:8000/api/data';
+
 $.ajax({
-    url: 'http://127.0.0.1:8000/api/data',
+    url: myUrl,
     type: "GET",
     dataType: "json",
     success: function (data) {

@@ -176,6 +176,37 @@
                                 </div>
                             </div>
                         </div>
+
+                        <div class="my-container">
+                            <div class="my-card">
+                                <img class="my-card-image">
+                                <div class="my-card-content">
+                                    <h3 id="title">Title</h3>
+                                    <p id="content">Content</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="my-container">
+                            <div class="my-card">
+                                <img class="my-card-image">
+                                <div class="my-card-content">
+                                    <h3 id="title">Title</h3>
+                                    <p id="content">Content</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="my-container">
+                            <div class="my-card">
+                                <img class="my-card-image">
+                                <div class="my-card-content">
+                                    <h3 id="title">Title</h3>
+                                    <p id="content">Content</p>
+                                </div>
+                            </div>
+                        </div>
+                    
                     
                     </div><!-- End blog entries list -->
 

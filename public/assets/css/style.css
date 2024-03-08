@@ -1277,7 +1277,7 @@ section {
 .my-container {
   display: flex;
   justify-content: center;
-  min-height: 100vh;
+  min-height: 60vh;
   /* Ensures card fills the viewport height */
 }
 
@@ -1293,8 +1293,7 @@ section {
   margin-bottom: 20px;
   /* margin: 20px auto; */
   padding: 20px;
-  display: flex;
-  flex-direction: column;
+  height: 100%;
 }
 
 .my-card-image {
