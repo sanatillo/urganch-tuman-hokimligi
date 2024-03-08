@@ -149,36 +149,30 @@
                     
                         <div class="my-container">
                             <div class="my-card">
-                                <img src="/assets/img/contact-bg.png" alt="News Image 1" class="my-card-image">
+                                <img class="my-card-image">
                                 <div class="my-card-content">
-                                    <h3>News Headline 1</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna justo, laoreet sit amet eros
-                                        eget, gravida gravida lorem. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                                    <a href="#" class="read-more">Read More</a>
+                                    <h3 id="title">Title</h3>
+                                    <p id="content">Content</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="my-container">
                             <div class="my-card">
-                                <img src="/assets/img/photo_2024-02-23_15-38-09.jpg" alt="News Image 1" class="my-card-image">
+                                <img class="my-card-image">
                                 <div class="my-card-content">
-                                    <h3>News Headline 1</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna justo, laoreet sit amet eros
-                                        eget, gravida gravida lorem. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                                    <a href="#" class="read-more">Read More</a>
+                                    <h3 id="title">Title</h3>
+                                    <p id="content">Content</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="my-container">
                             <div class="my-card">
-                                <img src="/assets/img/photo_2024-03-03_21-02-21.jpg" alt="News Image 1" class="my-card-image">
+                                <img class="my-card-image">
                                 <div class="my-card-content">
-                                    <h3>News Headline 1</h3>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus magna justo, laoreet sit amet eros
-                                        eget, gravida gravida lorem. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                                    <a href="#" class="read-more">Read More</a>
+                                    <h3 id="title">Title</h3>
+                                    <p id="content">Content</p>
                                 </div>
                             </div>
                         </div>
@@ -271,11 +265,49 @@
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
     <script>
+    function posts() {
+    $.ajax({
+        url: 'http://127.0.0.1:8000/api/data',
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            console.log("Posts : ", data.posts)
+        },
+        error: function () {
+            alert("Xatolik yuz berdi");
+        }
+    })
+  }
 
+  document.addEventListener("DOMContentLoaded", posts);
+
+$.ajax({
+    url: 'http://127.0.0.1:8000/api/data',
+    type: "GET",
+    dataType: "json",
+    success: function (data) {
+
+        let title = document.querySelectorAll("#title"),
+            myContent = document.querySelectorAll("#content"),
+            image = document.querySelectorAll(".my-card-image");
+
+            console.log(title);
+        for (let i = 0; i < 6; i++) {
+            myContent[i].innerHTML = data.posts[i].content;
+            title[i].innerHTML = data.posts[i].title;
+            image[i].src = data.posts[i].photo_path;
+        }
+
+    },
+    error: function () {
+        alert("Data was not found");
+    }
+})
     </script>
 
 </body>

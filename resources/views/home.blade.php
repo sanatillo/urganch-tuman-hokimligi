@@ -153,62 +153,70 @@
         <h2>Янгиликлар</h2>
       </div>
 
-      <div class="row row-cols-1 row-cols-md-3 g-4">
-          <div class="col-lg-4">
-            <div class="card">
-              <img class="card-img-top img-fluid">
-              <div class="card-body ">
-                <h5 class="card-title">Title</h5>
-                <p class="card-text">Short Context</p>
+
+      <section class="news-container">
+        <article class="news-card">
+            <div>
+                <img class="my-img">
+                <div class="card-content">
+                  <h3 class="my-title">Title</h3>
+                  <p class="my-shortcontent">Short Content</p>
+                </div>
               </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card">
-              <img class="card-img-top">
-              <div class="card-body ">
-                <h5 class="card-title">Title</h5>
-                <p class="card-text">Short Context</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card">
-              <img class="card-img-top">
-              <div class="card-body ">
-                <h5 class="card-title">Title</h5>
-                <p class="card-text">Short Context</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card">
-              <img class="card-img-top">
-              <div class="card-body ">
-                <h5 class="card-title">Title</h5>
-                <p class="card-text">Short Context</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card">
-              <img class="card-img-top">
-              <div class="card-body ">
-                <h5 class="card-title">Title</h5>
-                <p class="card-text">Short Context</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-4">
-            <div class="card">
-              <img class="card-img-top">
-              <div class="card-body ">
-                <h5 class="card-title">Title</h5>
-                <p class="card-text">Short Context</p>
-              </div>
-            </div>
-          </div>
-      </div>
+        </article>
+
+        <article class="news-card">
+            <a>
+                <img class="my-img">
+                <div class="card-content">
+                    <h3 class="my-title">Title</h3>
+                    <p class="my-shortcontent">Short Content</p>
+                </div>
+            </a>
+        </article>
+
+        <article class="news-card">
+            <a>
+                <img class="my-img">
+                <div class="card-content">
+                    <h3 class="my-title">Title</h3>
+                    <p class="my-shortcontent">Short Content</p>
+                </div>
+            </a>
+        </article>
+
+        <article class="news-card">
+            <a>
+                <img class="my-img">
+                <div class="card-content">
+                    <h3 class="my-title">Title</h3>
+                    <p class="my-shortcontent">Short Content</p>
+                </div>
+            </a>
+        </article>
+
+        <article class="news-card">
+            <a>
+                <img class="my-img">
+                <div class="card-content">
+                    <h3 class="my-title">Title</h3>
+                    <p class="my-shortcontent">Short Content</p>
+                </div>
+            </a>
+        </article>
+
+        <article class="news-card">
+            <a>
+                <img class="my-img">
+                <div class="card-content">
+                    <h3 class="my-title">Title</h3>
+                    <p class="my-shortcontent">Short Content</p>
+                </div>
+            </a>
+        </article>
+
+    </section>
+
     </section>
 
     <!-- ======= Contact Section ======= -->
@@ -362,21 +370,19 @@
 
   document.addEventListener("DOMContentLoaded", posts);
 
-
 $.ajax({
     url: 'http://127.0.0.1:8000/api/data',
     type: "GET",
     dataType: "json",
     success: function (data) {
 
-        // data for news
-        let title = document.querySelectorAll(".card-title"),
-            shortContent = document.querySelectorAll(".card-text"),
-            image = document.querySelectorAll(".card-img-top");
+        let title = document.querySelectorAll(".my-title"),
+            shortContent = document.querySelectorAll(".my-shortcontent"),
+            image = document.querySelectorAll(".my-img");
 
         for (let i = 0; i < 6; i++) {
-          if (data.posts[i].short_content.length > 50) {
-          shortContent[i].innerHTML = `${data.posts[i].short_content.slice(0, 100)}...<a href="#">more</a>`;
+          if (data.posts[i].short_content.length > 30) {
+            shortContent[i].innerHTML = `${data.posts[i].short_content.slice(0, 80)}...<a style="display: inline;" href="#">batafsil</a>`;
           }
           title[i].innerHTML = data.posts[i].title;
           image[i].src = data.posts[i].photo_path;
@@ -387,8 +393,6 @@ $.ajax({
         alert("Data was not found");
     }
 })
-
-
   </script>
 
 </body>
