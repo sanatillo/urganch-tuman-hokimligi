@@ -54,54 +54,54 @@
           <li class="nav-item dropdown p-1">
             <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Туман хокимлиги</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="news.html">Туман ҳокимлиги аппарати</a></li>
-              <li><a class="dropdown-item" href="news.html">Бошқарув аппаратининг тузилмаси</a></li>
-              <li><a class="dropdown-item" href="news.html">Қабул жадвали</a></li>
-              <li><a class="dropdown-item" href="news.html">Ишонч ва ягона телефон рақамлари</a></li>
-              <li><a class="dropdown-item" href="news.html">Ҳорижий ва халқаро ҳамкорлик алоқалари</a></li>
-              <li><a class="dropdown-item" href="relationships.html">Бошқа давлат органлари билан ўзаро муносабатлар</a></li>
-              <li><a class="dropdown-item" href="news.html">Маҳаллий ва халқаро битимлар, шартномалар</a></li>
-              <li><a class="dropdown-item" href="news.html">Кун тартиби, иш режаси ва йиғилиш масалалари</a></li>
-              <li><a class="dropdown-item" href="news.html">Электрон ҳукумат доирасида қилинаётган ишлар</a></li>
-              <li><a class="dropdown-item" href="news.html">Ҳокимлик иштирокидаги тадбирлар</a></li>
-              <li><a class="dropdown-item" href="news.html">Бўш иш ўринлари</a></li>
-              <li><a class="dropdown-item" href="news.html">Манзил</a></li>
+              <li><a class="dropdown-item" href="#">Туман ҳокимлиги аппарати</a></li>
+              <li><a class="dropdown-item" href="#">Бошқарув аппаратининг тузилмаси</a></li>
+              <li><a class="dropdown-item" href="#">Қабул жадвали</a></li>
+              <li><a class="dropdown-item" href="#">Ишонч ва ягона телефон рақамлари</a></li>
+              <li><a class="dropdown-item" href="#">Ҳорижий ва халқаро ҳамкорлик алоқалари</a></li>
+              <li><a class="dropdown-item" href="">Бошқа давлат органлари билан ўзаро муносабатлар</a></li>
+              <li><a class="dropdown-item" href="#">Маҳаллий ва халқаро битимлар, шартномалар</a></li>
+              <li><a class="dropdown-item" href="#">Кун тартиби, иш режаси ва йиғилиш масалалари</a></li>
+              <li><a class="dropdown-item" href="#">Электрон ҳукумат доирасида қилинаётган ишлар</a></li>
+              <li><a class="dropdown-item" href="#">Ҳокимлик иштирокидаги тадбирлар</a></li>
+              <li><a class="dropdown-item" href="#">Бўш иш ўринлари</a></li>
+              <li><a class="dropdown-item" href="#">Манзил</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown p-1">
             <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Туман ҳақида</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="{{route('news')}}">Янгиликлар</a></li>
-              <li><a class="dropdown-item" href="{{route('advert')}}">Тендер ва эълонлар</a></li>
-              <li><a class="dropdown-item" href="news.html">Туман ҳақида маълумот</a></li>
-              <li><a class="dropdown-item" href="news.html">Туман ташкилотлари</a></li>
-              <li><a class="dropdown-item" href="neighbourhood.html">Маҳалла фуқоралар йиғинлари</a></li>
-              <li><a class="dropdown-item" href="news.html">Олий таълим муассасалари</a></li>
-              <li><a class="dropdown-item" href="news.html">Мактабгача таълим муассасалари</a></li>
-              <li><a class="dropdown-item" href="news.html">Умумий ўрта таълим мактаблар</a></li>
-              <li><a class="dropdown-item" href="news.html">Касб-ҳунар коллежлари</a></li>
-              <li><a class="dropdown-item" href="statistical.html">Статистикалар</a></li>
-              <li><a class="dropdown-item" href="news.html">Экология</a></li>
+              <li><a class="dropdown-item" href="{#">Тендер ва эълонлар</a></li>
+              <li><a class="dropdown-item" href="#">Туман ҳақида маълумот</a></li>
+              <li><a class="dropdown-item" href="#">Туман ташкилотлари</a></li>
+              <li><a class="dropdown-item" href="#">Маҳалла фуқоралар йиғинлари</a></li>
+              <li><a class="dropdown-item" href="#">Олий таълим муассасалари</a></li>
+              <li><a class="dropdown-item" href="#">Мактабгача таълим муассасалари</a></li>
+              <li><a class="dropdown-item" href="#">Умумий ўрта таълим мактаблар</a></li>
+              <li><a class="dropdown-item" href="#">Касб-ҳунар коллежлари</a></li>
+              <li><a class="dropdown-item" href="#">Статистикалар</a></li>
+              <li><a class="dropdown-item" href="#">Экология</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown p-1">
             <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Электрон хизматлар</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="news.html">Мурожаатлар статистикаси</a></li>
-              <li><a class="dropdown-item" href="news.html">Кўп бериладиган саволларга жавоблар</a></li>
-              <li><a class="dropdown-item" href="news.html">Фуқаролар мурожаатлари</a></li>
-              <li><a class="dropdown-item" href="news.html">Нотариал ҳаракатлар учун Давлат божи ставкалари</a></li>
-              <li><a class="dropdown-item" href="news.html">Маҳаллий давлат ҳокимияти таркиби</a></li>
-              <li><a class="dropdown-item" href="news.html">Ҳаж ва Умра зиёратига бориш тартиби</a></li>
-              <li><a class="dropdown-item" href="news.html">Бизнесни режалаштириш ва бошқариш</a></li>
-              <li><a class="dropdown-item" href="news.html">Тадбиркорликни лицензиялаш</a></li>
+              <li><a class="dropdown-item" href="#">Мурожаатлар статистикаси</a></li>
+              <li><a class="dropdown-item" href="#">Кўп бериладиган саволларга жавоблар</a></li>
+              <li><a class="dropdown-item" href="#">Фуқаролар мурожаатлари</a></li>
+              <li><a class="dropdown-item" href="#">Нотариал ҳаракатлар учун Давлат божи ставкалари</a></li>
+              <li><a class="dropdown-item" href="#">Маҳаллий давлат ҳокимияти таркиби</a></li>
+              <li><a class="dropdown-item" href="#">Ҳаж ва Умра зиёратига бориш тартиби</a></li>
+              <li><a class="dropdown-item" href="#">Бизнесни режалаштириш ва бошқариш</a></li>
+              <li><a class="dropdown-item" href="#">Тадбиркорликни лицензиялаш</a></li>
               <li><a class="dropdown-item bg-info" href="https://lex.uz/docs/-4486145?ONDATE=12.03.2022">Алкоголли савдофаолиятини лицензиялаш тартиби</a></li>
               <li><a class="dropdown-item bg-info" href="https://lex.uz/ru/docs/-899322?ONDATE=29.12.2019">Улгуржи савдофаолиятини лицензиялаш</a></li>
               <li><a class="dropdown-item bg-info" href="https://lex.uz/uz/docs/-6026643">Давлат харидларини амалга ошириш</a></li>
               <li><a class="dropdown-item bg-info" href="https://lex.uz/docs/6694131">Транспорт хизматларини ташкил этиш</a></li>
-              <li><a class="dropdown-item" href="news.html">Автомобил ёнилғиси савдо фаолиятини лицензиялаш</a></li>
+              <li><a class="dropdown-item" href="#">Автомобил ёнилғиси савдо фаолиятини лицензиялаш</a></li>
               <li><a class="dropdown-item bg-info" href="https://lex.uz/docs/-152653?ONDATE=26.10.2018%2000">Ер муносабатларини тартибга солиш</a></li>
-              <li><a class="dropdown-item" href="news.html">Очиқ маълумотлар</a></li>
+              <li><a class="dropdown-item" href="#">Очиқ маълумотлар</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown p-1">
@@ -110,14 +110,14 @@
               <li><a class="dropdown-item bg-info" href="https://lex.uz/uz/docs/-6396146">Президент фармон, қарорлари</a></li>
               <li><a class="dropdown-item bg-info" href="https://lex.uz/acts/-1160432">Қонунчилик палатаси қарорлари</a></li>
               <li><a class="dropdown-item bg-info" href="https://lex.uz/docs/-6020887?ONDATE=18.05.2022%2000">Вазирлар Маҳкамаси қарорлари</a></li>
-              <li><a class="dropdown-item" href="news.html">Туман ҳокими қарорлари</a></li>
-              <li><a class="dropdown-item" href="news.html">Туман ҳокими фармойишлари</a></li>
+              <li><a class="dropdown-item" href="#">Туман ҳокими қарорлари</a></li>
+              <li><a class="dropdown-item" href="#">Туман ҳокими фармойишлари</a></li>
               <li><a class="dropdown-item bg-info" href="https://lex.uz/acts/-1392614">Ўз кучини йўқотган меъёрий ҳужжатлари</a></li>
-              <li><a class="dropdown-item" href="news.html">Туман ҳокимлиги иш юритиш йўриқномаси</a></li>
-              <li><a class="dropdown-item" href="news.html">Расмий маърузалар</a></li>
+              <li><a class="dropdown-item" href="#">Туман ҳокимлиги иш юритиш йўриқномаси</a></li>
+              <li><a class="dropdown-item" href="#">Расмий маърузалар</a></li>
               <li><a class="dropdown-item" href="developed_party.html">Ишлаб чиқилган чора тадбирлар</a></li>
-              <li><a class="dropdown-item" href="news.html">Аналитик хисобот ва тахлиллар</a></li>
-              <li><a class="dropdown-item" href="news.html">Депутатлар фаолияти</a></li>
+              <li><a class="dropdown-item" href="#">Аналитик хисобот ва тахлиллар</a></li>
+              <li><a class="dropdown-item" href="#">Депутатлар фаолияти</a></li>
             </ul>
           </li>
           <!-- <li><a class="nav-link scrollto" href="#">Сайт харитаси</a></li> -->
@@ -138,7 +138,7 @@
           <h2 class="animate__animated animate__fadeInDown">Янгиликлар</h2>
           <p class="animate__animated animate__fadeInUp">Призидентимиз карорлари ва конунларидан хабардор бўлинг.
             Урганч Туманида рўй бераетган янгиликлар, юзага келган муамолар ва ечимлардан бохабар бўлинг.</p>
-          <a href="news.html" class="btn-get-started animate__animated animate__fadeInUp scrollto">Кўпрок билиш</a>
+          <a href="{{route('news')}}" class="btn-get-started animate__animated animate__fadeInUp scrollto">Кўпрок билиш</a>
         </div>
       </div>
 

@@ -15,7 +15,7 @@ class PostSeeder extends Seeder
     public function run(): void
     {
         DB::table('Posts')->insert([
-            'title' =>  'Хоразм_вилоятининг_ижтимоий-иқтисодий_ҳолати_рақамларда',
+            'title' =>  'Хоразм вилоятининг ижтимоий-иқтисодий ҳолати рақамларда',
             'content' => '📊 Статистика агентлигининг дастлабки маълумотларига кўра, 2023 йилда Хоразм вилоятининг ижтимоий-иқтисодий ҳолати рақамларда: 
 
             🔹 ялпи ҳудудий маҳсулот ҳажми – 36,9 трлн сўм
@@ -39,10 +39,10 @@ class PostSeeder extends Seeder
             🔹доимий аҳолиси сони (2024 йил 1 январь ҳолатига) – 1 995,6 минг киши',
             'short_content' => '📊 Статистика агентлигининг дастлабки маълумотларига кўра, 2023 йилда Хоразм вилоятининг ижтимоий-иқтисодий ҳолати рақамларда: ',
             'views_count'=>121,
-            'photo_path'=>'/image.jpg'
+            'photo_path'=>'\assets\img\photo_2024-03-08_19-16-07.jpg'
         ]);
         DB::table('Posts')->insert([
-            'title' =>  'Urganch_tumanida_bajarilgan_qurilish_ishlari',
+            'title' =>  'Urganch tumanida bajarilgan qurilish ishlari',
             'content' => '📊  2023- yilning yanvar-dekabr oylarida Urganch tumanida  650,9 mlrd so‘mlik qurilish ishlari amalga oshirilgan.
                 Iqtisodiy faoliyat  turiga ko‘ra tumanda bajarilgan qurilish ishlarining tarkibi:
                 bino va inshootlar qurilishi – 408,2 mlrd so‘m
@@ -51,19 +51,18 @@ class PostSeeder extends Seeder
                 Jami qurilish ishlarining 51,9 %i (338,1 mlrd so‘mi) kichik korxona va mikrofirmalar hissasiga to‘g‘ri kelgan.',
             'short_content' => '📊  2023- yilning yanvar-dekabr oylarida Urganch tumanida  650,9 mlrd so‘mlik qurilish ishlari amalga oshirilgan.',
             'views_count'=>144,
-            'photo_path'=>'/image.jpg'
+            'photo_path'=>'\assets\img\photo_2024-03-08_19-17-01.jpg'
         ]);
         DB::table('Posts')->insert([
-            'title' =>  'Xorazm_viloyatida_qishloq,_o‘rmon_va_baliqchilik_xo‘jaligida_qancha_qo‘shilgan_qiymat_yaratildi?',
+            'title' =>  'Xorazm viloyatida qishloq, o‘rmon va baliqchilik xo‘jaligida qancha qo‘shilgan qiymat yaratildi?',
             'content' => 'Xorazm viloyatida qishloq, o‘rmon va baliqchilik xo‘jaligida qancha qo‘shilgan qiymat yaratildi?
-
             📊 2023- yil yakunlariga ko‘ra, Xorazm viloyati bo‘yicha qishloq, o‘rmon va baliqchilik xo‘jaligida yaratilgan yalpi qo‘shilgan qiymat hajmi 16 252,2 mlrd so‘mni tashkil etdi va 2022- yilga nisbatan 4,0 % ga o‘sdi.',
             'short_content' => '📊  2023- yil yakunlariga ko‘ra, Xorazm viloyati bo‘yicha qishloq, o‘rmon va baliqchilik xo‘jaligida ',
             'views_count'=>91,
-            'photo_path'=>'/image.jpg'
+            'photo_path'=>'\assets\img\photo_2024-03-08_19-18-45.jpg'
         ]);
         DB::table('Posts')->insert([
-            'title' =>  'Eng_faol_ijtimoiy_ko\'rik tanlovi_tashkil_etiladi',
+            'title' =>  'Eng faol ijtimoiy ko\'rik tanlovi tashkil etiladi',
             'content' => '🖋 Vazirlar Mahkamasining 2024-yil 3-fevraldagi qaroriga muvofiq, “Eng faol ijtimoiy xodim” ko‘rik-tanlovini tashkil etish chora-tadbirlari to‘g‘risida”gi nizom qabul qilindi.  
 
             🥹 Mazkur tanlovni o‘tkazishgan ko‘zlangan asosiy maqsad - Ijtimoiy himoya milliy agentligi tizimi hamda nodavlat-notijorat tashkilotlardagi ijtimoiy xodimlar, ijtimoiy xodim assistentlari ongida “Ijtimoiy himoyaga muxtoj aholiga sifatli ijtimoiy xizmat va yordam ko‘rsatish-oliy burchimiz!” konseptual g‘oyasini mustahkamlashdan iborat.  
@@ -71,10 +70,10 @@ class PostSeeder extends Seeder
             Ko‘rik-tanlov haqidagi batafsil ma’lumot bilan bu yerda (https://lex.uz/uz/docs/-6789178) tanishishingiz mumkin.',
             'short_content' => '🖋 Vazirlar Mahkamasining 2024-yil 3-fevraldagi qaroriga muvofiq, “Eng faol ijtimoiy xodim” ko‘rik-tanlovini tashkil etish chora-tadbirlari to‘g‘risida”gi nizom qabul qilindi.  ',
             'views_count'=>110,
-            'photo_path'=>'/image.jpg'
+            'photo_path'=>'\assets\img\photo_2024-03-08_19-21-43.jpg'
         ]);
         DB::table('Posts')->insert([
-            'title' =>  'Urganch_tumanida_qancha_hajmdagi_chorvachilik_mahsulotlari_ishlab_chiqarilgan?',
+            'title' =>  'Urganch tumanida qancha hajmdagi chorvachilik mahsulotlari ishlab chiqarilgan?',
             'content' => '📊 2023- yilning yanvar-dekabr oylarida Urganch tumanida  hajmi 1 658.3 mlrd so‘mlik chorvachilik mahsulotlari ishlab chiqarildi va 2022- yilning mos davriga nisbatan o‘sish  1,3 % ni tashkil etdi.
                 Chorvachilik mahsulotlari ishlab chiqarish viloyat  umumiy hajmida tumanning ulushi  11,5 %ni tashkil qildi.
                 Tumanda ishlab chiqarilgan chorvachilik mahsulotlari tarkibi:
@@ -84,15 +83,15 @@ class PostSeeder extends Seeder
                 ovlangan baliq – 924 tonna.',
             'short_content' => '📊 2023- yilning yanvar-dekabr oylarida Urganch tumanida  hajmi 1 658.3 mlrd so‘mlik chorvachilik mahsulotlari ishlab chiqarildi ',
             'views_count'=>101,
-            'photo_path'=>'/image.jpg'
+            'photo_path'=>'\assets\img\photo_2024-03-08_19-22-21.jpg'
         ]);
         DB::table('Posts')->insert([
-            'title' =>  'Urganch_tumanida_qancha_hajmdagi_xorijiy_investitsiya_o‘zlashtirildi?',
+            'title' =>  'Urganch tumanida qancha hajmdagi xorijiy investitsiya o‘zlashtirildi?',
             'content' => '📊  2023- yilning  yanvar-dekabr oylarida Urganch tumanida asosiy kapitalga 1 445,0 mlrd so‘mlik investitsiya o‘zlashtirilgan bo‘lib, shundan 65,2 %i yoki 941,7 mlrd so‘mini to‘g‘ridan-to‘g‘ri xorijiy investitsiya va kafolatlanmagan kreditlar tashkil qilgan.
                 Shu turdagi investitsiyalarning tarkibida to‘g‘ridan-to‘g‘ri xorijiy investitsiyalar hajmi 120,0 mlrd so‘mni, kafolatlanmagan kreditlar 818,7 mlrd so‘mni tashkil etgan.',
             'short_content' => '📊  2023- yilning  yanvar-dekabr oylarida Urganch tumanida asosiy kapitalga 1 445,0 mlrd so‘mlik investitsiya o‘zlashtirilgan bo‘lib',
             'views_count'=>129,
-            'photo_path'=>'/image.jpg'
+            'photo_path'=>'\assets\img\photo_2024-03-08_19-23-21.jpg'
         ]);
     }
 }

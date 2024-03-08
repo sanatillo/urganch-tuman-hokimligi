@@ -17,10 +17,12 @@ use Illuminate\Support\Facades\Route;
 */
 
 
-Route::get('/Bosh sahifa', [Pagecontroller ::class, 'home'])->name('home');
+Route::get('/Bosh sahifa', function(){
+    return redirect('/home');
+});
 
 Route::get('/', function(){
-    return redirect('/Bosh sahifa');
+    return redirect('/home');
 });
 
 Route::prefix('Tuman hokimligi')->group(function(){
@@ -220,9 +222,13 @@ Route::get('Deputatlar faoliyati', function(){
     return ('rasm va rasm haqida izohlar bo\'ladi');
 });
 
-Route::get('/home', [Pagecontroller::class, 'home'])->name('home');
+Route::get('/home', function(){
+    return view('home');
+})->name('home');
 
-Route::get('/news', [Pagecontroller::class, 'news'])->name('news');
+Route::get('/news', function(){
+    return view('news');
+})->name('news');
 
 Route::get('/advert', [Pagecontroller::class, 'advert'])->name('advert');
 
