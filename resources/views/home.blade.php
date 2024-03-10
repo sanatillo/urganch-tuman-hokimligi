@@ -28,9 +28,9 @@
 </head>
 
 <body>
-
+  <marquee class="test">Xoji buva ozing yazibar birnarsala dap indi mani kalama galmadi dogrisi</marquee>
   <!-- ======= Top Bar ======= -->
-  <div id="topbar" class="fixed-top d-flex align-items-center ">
+  <div id="topbar" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
       <div class="contact-info d-flex align-items-center d-none d-md-block">
         <i class="bi bi-envelope-fill"></i>info@urganchhokimiyat.uz
@@ -363,7 +363,7 @@
             console.log("Posts : ", data.posts)
         },
         error: function () {
-            alert("Xatolik yuz berdi");
+            //alert("Xatolik yuz berdi");
         }
     })
   }
@@ -392,7 +392,7 @@ $.ajax({
 
     },
     error: function () {
-        alert("Data was not found");
+        //alert("Data was not found");
     }
 })
   </script>
