@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Ишлаб Чиқилган Чора Тадбирлар</title>
+    <title>Ишлаб чиқилган чора тадбирлар</title>
     <meta content="" name="description">
     <meta content="" name="keywords">
 
@@ -26,6 +26,7 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
+
 </head>
 
 <body>
@@ -34,8 +35,8 @@
     <div id="topbar" class="fixed-top d-flex align-items-center topbar-inner-pages">
         <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
             <div class="contact-info d-flex align-items-center d-none d-md-block">
-                <i class="bi bi-envelope-fill"></i>info@urganchhokimiyat.uz
-                <i class="bi bi-phone-fill phone-icon"></i> +998 (62) 352-28-43
+                <i class="bi bi-envelope-fill"></i><span>info@urganchhokimiyat.uz</span>
+                <i class="bi bi-phone-fill phone-icon"></i><span>+998 (62) 352-28-43</span>
             </div>
         </div>
     </div>
@@ -46,27 +47,20 @@
             <nav id="navbar" class="navbar">
                 <ul>
                     <li class="nav-item dropdown">
-                        <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                            Туман хокимлиги
-                        </a>
+                        <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Туман хокимлиги</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="news.html">Туман ҳокимлиги аппарати</a></li>
-                            <li><a class="dropdown-item" href="news.html">Бошқарув аппаратининг тузилмаси</a></li>
-                            <li><a class="dropdown-item" href="news.html">Қабул жадвали</a></li>
-                            <li><a class="dropdown-item" href="news.html">Ишонч ва ягона телефон рақамлари</a></li>
-                            <li><a class="dropdown-item" href="news.html">Ҳорижий ва халқаро ҳамкорлик алоқалари</a>
-                            </li>
-                            <li><a class="dropdown-item" href="relationships.html">Бошқа давлат органлари билан ўзаро
-                                    муносабатлар</a></li>
-                            <li><a class="dropdown-item" href="news.html">Маҳаллий ва халқаро битимлар, шартномалар</a>
-                            </li>
-                            <li><a class="dropdown-item" href="news.html">Кун тартиби, иш режаси ва йиғилиш
-                                    масалалари</a></li>
-                            <li><a class="dropdown-item" href="news.html">Электрон ҳукумат доирасида қилинаётган
-                                    ишлар</a></li>
-                            <li><a class="dropdown-item" href="news.html">Ҳокимлик иштирокидаги тадбирлар</a></li>
-                            <li><a class="dropdown-item" href="news.html">Бўш иш ўринлари</a></li>
-                            <li><a class="dropdown-item" href="news.html">Манзил</a></li>
+                            <li><a class="dropdown-item" href="#">Туман ҳокимлиги аппарати</a></li>
+                            <li><a class="dropdown-item" href="#">Бошқарув аппаратининг тузилмаси</a></li>
+                            <li><a class="dropdown-item" href="#">Қабул жадвали</a></li>
+                            <li><a class="dropdown-item" href="#">Ишонч ва ягона телефон рақамлари</a></li>
+                            <li><a class="dropdown-item" href="#">Ҳорижий ва халқаро ҳамкорлик алоқалари</a></li>
+                            <li><a class="dropdown-item" href="#">Бошқа давлат органлари билан ўзаро муносабатлар</a></li>
+                            <li><a class="dropdown-item" href="#">Маҳаллий ва халқаро битимлар, шартномалар</a></li>
+                            <li><a class="dropdown-item" href="#">Кун тартиби, иш режаси ва йиғилиш масалалари</a></li>
+                            <li><a class="dropdown-item" href="#">Электрон ҳукумат доирасида қилинаётган ишлар</a></li>
+                            <li><a class="dropdown-item" href="#">Ҳокимлик иштирокидаги тадбирлар</a></li>
+                            <li><a class="dropdown-item" href="#">Бўш иш ўринлари</a></li>
+                            <li><a class="dropdown-item" href="#">Манзил</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
@@ -74,61 +68,53 @@
                             Туман ҳақида
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="news.html">Янгиликлар</a></li>
-                            <li><a class="dropdown-item" href="advert.html">Тендер ва эълонлар</a></li>
-                            <li><a class="dropdown-item" href="news.html">Туман ҳақида маълумот</a></li>
-                            <li><a class="dropdown-item" href="news.html">Туман ташкилотлари</a></li>
-                            <li><a class="dropdown-item" href="neighbourhood.html">Маҳалла фуқоралар йиғинлари</a></li>
-                            <li><a class="dropdown-item" href="news.html">Олий таълим муассасалари</a></li>
-                            <li><a class="dropdown-item" href="news.html">Мактабгача таълим муассасалари</a></li>
-                            <li><a class="dropdown-item" href="news.html">Умумий ўрта таълим мактаблар</a></li>
-                            <li><a class="dropdown-item" href="news.html">Касб-ҳунар коллежлари</a></li>
-                            <li><a class="dropdown-item" href="statistical.html">Статистикалар</a></li>
-                            <li><a class="dropdown-item" href="news.html">Экология</a></li>
+                            <li><a class="dropdown-item" href="#">Янгиликлар</a></li>
+                            <li><a class="dropdown-item" href="#">Тендер ва эълонлар</a></li>
+                            <li><a class="dropdown-item" href="#">Туман ҳақида маълумот</a></li>
+                            <li><a class="dropdown-item" href="#">Туман ташкилотлари</a></li>
+                            <li><a class="dropdown-item" href="#">Маҳалла фуқоралар йиғинлари</a></li>
+                            <li><a class="dropdown-item" href="#">Олий таълим муассасалари</a></li>
+                            <li><a class="dropdown-item" href="#">Мактабгача таълим муассасалари</a></li>
+                            <li><a class="dropdown-item" href="#">Умумий ўрта таълим мактаблар</a></li>
+                            <li><a class="dropdown-item" href="#">Касб-ҳунар коллежлари</a></li>
+                            <li><a class="dropdown-item" href="#">Статистикалар</a></li>
+                            <li><a class="dropdown-item" href="#">Экология</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                            Электрон хизматлар
-                        </a>
+                        <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Электрон хизматлар</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="news.html">Мурожаатлар статистикаси</a></li>
-                            <li><a class="dropdown-item" href="news.html">Кўп бериладиган саволларга жавоблар</a></li>
-                            <li><a class="dropdown-item" href="news.html">Фуқаролар мурожаатлари</a></li>
-                            <li><a class="dropdown-item" href="news.html">Нотариал ҳаракатлар учун Давлат божи
-                                    ставкалари</a></li>
-                            <li><a class="dropdown-item" href="news.html">Маҳаллий давлат ҳокимияти таркиби</a></li>
-                            <li><a class="dropdown-item" href="news.html">Ҳаж ва Умра зиёратига бориш тартиби</a></li>
-                            <li><a class="dropdown-item" href="news.html">Бизнесни режалаштириш ва бошқариш</a></li>
-                            <li><a class="dropdown-item" href="news.html">Тадбиркорликни лицензиялаш</a></li>
-                            <li><a class="dropdown-item" href="news.html">Алкоголли савдо фаолиятини лицензиялаш
-                                    тартиби</a></li>
-                            <li><a class="dropdown-item" href="news.html">Улгуржи савдо фаолиятини лицензиялаш</a></li>
-                            <li><a class="dropdown-item" href="news.html">Давлат харидларини амалга ошириш</a></li>
-                            <li><a class="dropdown-item" href="news.html">Транспорт хизматларини ташкил этиш</a></li>
-                            <li><a class="dropdown-item" href="news.html">Автомобил ёнилғиси савдо фаолиятини
-                                    лицензиялаш</a></li>
-                            <li><a class="dropdown-item" href="news.html">Ер муносабатларини тартибга солиш</a></li>
-                            <li><a class="dropdown-item" href="news.html">Очиқ маълумотлар</a></li>
+                            <li><a class="dropdown-item" href="#">Мурожаатлар статистикаси</a></li>
+                            <li><a class="dropdown-item" href="#">Кўп бериладиган саволларга жавоблар</a></li>
+                            <li><a class="dropdown-item" href="#">Фуқаролар мурожаатлари</a></li>
+                            <li><a class="dropdown-item" href="#">Нотариал ҳаракатлар учун Давлат божи ставкалари</a></li>
+                            <li><a class="dropdown-item" href="#">Маҳаллий давлат ҳокимияти таркиби</a></li>
+                            <li><a class="dropdown-item" href="#">Ҳаж ва Умра зиёратига бориш тартиби</a></li>
+                            <li><a class="dropdown-item" href="#">Бизнесни режалаштириш ва бошқариш</a></li>
+                            <li><a class="dropdown-item" href="#">Тадбиркорликни лицензиялаш</a></li>
+                            <li><a class="dropdown-item" href="#">Алкоголли савдо фаолиятини лицензиялаш тартиби</a></li>
+                            <li><a class="dropdown-item" href="#">Улгуржи савдо фаолиятини лицензиялаш</a></li>
+                            <li><a class="dropdown-item" href="#">Давлат харидларини амалга ошириш</a></li>
+                            <li><a class="dropdown-item" href="#">Транспорт хизматларини ташкил этиш</a></li>
+                            <li><a class="dropdown-item" href="#">Автомобил ёнилғиси савдо фаолиятини лицензиялаш</a></li>
+                            <li><a class="dropdown-item" href="#">Ер муносабатларини тартибга солиш</a></li>
+                            <li><a class="dropdown-item" href="#">Очиқ маълумотлар</a></li>
                         </ul>
                     </li>
                     <li class="nav-item dropdown">
-                        <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                            Меъёрий ҳужжатлар
-                        </a>
+                        <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Меъёрий ҳужжатлар</a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="news.html">Президент фармон, қарорлари</a></li>
-                            <li><a class="dropdown-item" href="news.html">Қонунчилик палатаси қарорлари</a></li>
-                            <li><a class="dropdown-item" href="news.html">Вазирлар Маҳкамаси қарорлари</a></li>
-                            <li><a class="dropdown-item" href="news.html">Туман ҳокими қарорлари</a></li>
-                            <li><a class="dropdown-item" href="news.html">Туман ҳокими фармойишлари</a></li>
-                            <li><a class="dropdown-item" href="news.html">Ўз кучини йўқотган меъёрий ҳужжатларon</a>
-                            </li>
-                            <li><a class="dropdown-item" href="news.html">Туман ҳокимлиги иш юритиш йўриқномаси</a></li>
-                            <li><a class="dropdown-item" href="news.html">Расмий маърузалар</a></li>
-                            <li><a class="dropdown-item" href="developed_party.html">Ишлаб чиқилган чора тадбирлар</a></li>
-                            <li><a class="dropdown-item" href="news.html">Аналитик хисобот ва тахлиллар</a></li>
-                            <li><a class="dropdown-item" href="news.html">Депутатлар фаолияти</a></li>
+                            <li><a class="dropdown-item" href="#">Президент фармон, қарорлари</a></li>
+                            <li><a class="dropdown-item" href="#">Қонунчилик палатаси қарорлари</a></li>
+                            <li><a class="dropdown-item" href="#">Вазирлар Маҳкамаси қарорлари</a></li>
+                            <li><a class="dropdown-item" href="#">Туман ҳокими қарорлари</a></li>
+                            <li><a class="dropdown-item" href="#">Туман ҳокими фармойишлари</a></li>
+                            <li><a class="dropdown-item" href="#">Ўз кучини йўқотган меъёрий ҳужжатларon</a></li>
+                            <li><a class="dropdown-item" href="#">Туман ҳокимлиги иш юритиш йўриқномаси</a></li>
+                            <li><a class="dropdown-item" href="#">Расмий маърузалар</a></li>
+                            <li><a class="dropdown-item" href="#">Ишлаб чиқилган чора тадбирлар</a></li>
+                            <li><a class="dropdown-item" href="#">Аналитик хисобот ва тахлиллар</a></li>
+                            <li><a class="dropdown-item" href="#">Депутатлар фаолияти</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -145,10 +131,10 @@
             <div class="container">
 
                 <ol>
-                    <li><a href="index.html">Асосий сахифа</a></li>
-                    <li><a href="news.html">Ишлаб Чиқилган Чора Тадбирлар</a></li>
+                    <li><a href="{{route('home')}}">Асосий сахифа</a></li>
+                    <li><a href="#">Ишлаб чиқилган чора тадбирлар</a></li>
                 </ol>
-                <h2>Ишлаб Чиқилган Чора Тадбирлар</h2>
+                <h2>Ишлаб чиқилган чора тадбирлар</h2>
 
             </div>
         </section><!-- End Breadcrumbs -->
@@ -160,8 +146,67 @@
                 <div class="row">
 
                     <div class="col-lg-8 entries">
+                    
+                        <div class="my-container">
+                            <div class="my-card">
+                                <img class="my-card-image">
+                                <div class="my-card-content">
+                                    <h3 id="title">Title</h3>
+                                    <p id="content">Content</p>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="my-container">
+                            <div class="my-card">
+                                <img class="my-card-image">
+                                <div class="my-card-content">
+                                    <h3 id="title">Title</h3>
+                                    <p id="content">Content</p>
+                                </div>
+                            </div>
+                        </div>
 
+                        <div class="my-container">
+                            <div class="my-card">
+                                <img class="my-card-image">
+                                <div class="my-card-content">
+                                    <h3 id="title">Title</h3>
+                                    <p id="content">Content</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="my-container">
+                            <div class="my-card">
+                                <img class="my-card-image">
+                                <div class="my-card-content">
+                                    <h3 id="title">Title</h3>
+                                    <p id="content">Content</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="my-container">
+                            <div class="my-card">
+                                <img class="my-card-image">
+                                <div class="my-card-content">
+                                    <h3 id="title">Title</h3>
+                                    <p id="content">Content</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="my-container">
+                            <div class="my-card">
+                                <img class="my-card-image">
+                                <div class="my-card-content">
+                                    <h3 id="title">Title</h3>
+                                    <p id="content">Content</p>
+                                </div>
+                            </div>
+                        </div>
+                    
                     
                     </div><!-- End blog entries list -->
 
@@ -251,9 +296,49 @@
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script>
+    function posts() {
+    $.ajax({
+        url: 'http://127.0.0.1:8000/api/data',
+        type: "GET",
+        dataType: "json",
+        success: function (data) {
+            console.log("Posts : ", data.posts)
+        },
+        error: function () {
+            alert("Xatolik yuz berdi");
+        }
+    })
+  }
+
+  document.addEventListener("DOMContentLoaded", posts);
+
+$.ajax({
+    url: 'http://127.0.0.1:8000/api/data',
+    type: "GET",
+    dataType: "json",
+    success: function (data) {
+
+        let title = document.querySelectorAll("#title"),
+            myContent = document.querySelectorAll("#content"),
+            image = document.querySelectorAll(".my-card-image");
+
+        for (let i = 0; i < 6; i++) {
+            myContent[i].innerHTML = data.posts[i].content;
+            title[i].innerHTML = data.posts[i].title;
+            image[i].src = data.posts[i].photo_path;
+        }
+
+    },
+    error: function () {
+        alert("Data was not found");
+    }
+})
+    </script>
 
 </body>
 

@@ -147,32 +147,65 @@
 
                     <div class="col-lg-8 entries">
 
-                    <div class="card mb-3">
-                        <img class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="h3">Card title</h5>
-                            <p class="entry-content">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class=""><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                    <div class="my-container">
+                            <div class="my-card">
+                                <img class="my-card-image">
+                                <div class="my-card-content">
+                                    <h3 id="title">Title</h3>
+                                    <p id="content">Content</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="card mb-3">
-                        <img class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="h3">Card title</h5>
-                            <p class="entry-content">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class=""><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        <div class="my-container">
+                            <div class="my-card">
+                                <img class="my-card-image">
+                                <div class="my-card-content">
+                                    <h3 id="title">Title</h3>
+                                    <p id="content">Content</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
 
-                    <div class="card mb-3">
-                        <img class="card-img-top">
-                        <div class="card-body">
-                            <h5 class="h3">Card title</h5>
-                            <p class="entry-content">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class=""><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+                        <div class="my-container">
+                            <div class="my-card">
+                                <img class="my-card-image">
+                                <div class="my-card-content">
+                                    <h3 id="title">Title</h3>
+                                    <p id="content">Content</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
+
+                        <div class="my-container">
+                            <div class="my-card">
+                                <img class="my-card-image">
+                                <div class="my-card-content">
+                                    <h3 id="title">Title</h3>
+                                    <p id="content">Content</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="my-container">
+                            <div class="my-card">
+                                <img class="my-card-image">
+                                <div class="my-card-content">
+                                    <h3 id="title">Title</h3>
+                                    <p id="content">Content</p>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class="my-container">
+                            <div class="my-card">
+                                <img class="my-card-image">
+                                <div class="my-card-content">
+                                    <h3 id="title">Title</h3>
+                                    <p id="content">Content</p>
+                                </div>
+                            </div>
+                        </div>
 
                     </div><!-- End blog entries list -->
 
@@ -291,14 +324,14 @@ $.ajax({
     success: function (data) {
 
         // data for news
-        let newsTitle = document.querySelectorAll(".h3"),
-            content = document.querySelectorAll(".entry-content"),
-            newsImage = document.querySelectorAll(".card-img-top");
+        let title = document.querySelectorAll("#title"),
+            content = document.querySelectorAll("#content"),
+            newsImage = document.querySelectorAll(".my-card-image");
 
 
         for (let i = 0; i < 6; i++) {
             content[i].innerHTML = data.posts[i].content;
-            newsTitle[i].innerHTML = data.posts[i].title;
+            title[i].innerHTML = data.posts[i].title;
             newsImage[i].src = data.posts[i].photo_path;
         }
 
