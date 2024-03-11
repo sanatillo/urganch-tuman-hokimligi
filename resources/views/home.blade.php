@@ -28,7 +28,7 @@
 </head>
 
 <body>
-  <marquee class="test">Xoji buva ozing yazibar birnarsala dap indi mani kalama galmadi dogrisi</marquee>
+  <marquee class="test">Hurmatli foydalanuvchilar ushbu sayti TEST rejimida ishlamoqda</marquee>
   <!-- ======= Top Bar ======= -->
   <div id="topbar" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
