@@ -13,8 +13,9 @@ return new class extends Migration
     {
         Schema::create('Munosabats', function (Blueprint $table) {
             $table->id();
-            $table->string('title',50);
-            $table->string('content');
+            $table->text('title');
+            $table->text('content');
+            $table->string('photo_path',70);
             $table->timestamps();
         });
     }

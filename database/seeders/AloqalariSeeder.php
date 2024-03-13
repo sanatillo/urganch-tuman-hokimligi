@@ -13,33 +13,33 @@ class AloqalariSeeder extends Seeder
      */
     public function run(): void
     {
-        DB::table('Aloqalari')->insert([
-            'title' => '1 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, laborum necessitatibus magni enim reiciendis velit fugiat totam labore impedit et?',
+        DB::table('Aloqalaris')->insert([
+            'title' => 'Aloqa 1 Lorem ipsum, dolort fugiat totam labore impedit et?',
             'content' => 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, laborum necessitatibus magni enim reiciendis velit fugiat totam labore impedit et?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, laborum necessitatibus magni enim reiciendis velit fugiat totam labore impedit et?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, laborum necessitatibus magni enim reiciendis velit fugiat totam labore impedit et?',
             'photo_path' => 'image/ramla.png'
         ]);
-        DB::table('Aloqalari')->insert([
-            'title' => '2 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, laborum necessitatibus magni enim reiciendis velit fugiat totam labore impedit et?',
+        DB::table('Aloqalaris')->insert([
+            'title' => 'Aloqa 2 Lorem laborum labore impedit et?',
             'content' => 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, laborum necessitatibus magni enim reiciendis velit fugiat totam labore impedit et?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, laborum necessitatibus magni enim reiciendis velit fugiat totam labore impedit et?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, laborum necessitatibus magni enim reiciendis velit fugiat totam labore impedit et?',
             'photo_path' => 'image/ramla.png'
         ]);
-        DB::table('Aloqalari')->insert([
-            'title' => '3 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, laborum necessitatibus magni enim reiciendis velit fugiat totam labore impedit et?',
+        DB::table('Aloqalaris')->insert([
+            'title' => 'Aloqa 3 Lorem laborum necessitatibus magni enim  labore impedit et?',
             'content' => 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, laborum necessitatibus magni enim reiciendis velit fugiat totam labore impedit et?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, laborum necessitatibus magni enim reiciendis velit fugiat totam labore impedit et?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, laborum necessitatibus magni enim reiciendis velit fugiat totam labore impedit et?',
             'photo_path' => 'image/ramla.png'
         ]);
-        DB::table('Aloqalari')->insert([
-            'title' => '4 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, laborum necessitatibus magni enim reiciendis velit fugiat totam labore impedit et?',
+        DB::table('Aloqalaris')->insert([
+            'title' => 'Aloqa 4 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, laborum necessitatibus magni enim reiciendis velit fugiat totam labore impedit et?',
             'content' => 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, laborum necessitatibus magni enim reiciendis velit fugiat totam labore impedit et?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, laborum necessitatibus magni enim reiciendis velit fugiat totam labore impedit et?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, laborum necessitatibus magni enim reiciendis velit fugiat totam labore impedit et?',
             'photo_path' => 'image/rasmla.png'
         ]);
-        DB::table('Aloqalari')->insert([
-            'title' => '5 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, laborum necessitatibus magni enim reiciendis velit fugiat totam labore impedit et?',
+        DB::table('Aloqalaris')->insert([
+            'title' => 'Aloqa 5 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, laborum necessitatibus magni enim reiciendis velit fugiat totam labore impedit et?',
             'content' => 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, laborum necessitatibus magni enim reiciendis velit fugiat totam labore impedit et?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, laborum necessitatibus magni enim reiciendis velit fugiat totam labore impedit et?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, laborum necessitatibus magni enim reiciendis velit fugiat totam labore impedit et?',
             'photo_path' => 'image/ramla.png'
         ]);
-        DB::table('Aloqalari')->insert([
-            'title' => '6 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, laborum necessitatibus magni enim reiciendis velit fugiat totam labore impedit et?',
+        DB::table('Aloqalaris')->insert([
+            'title' => 'Aloqa 6 Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, laborum necessitatibus magni enim reiciendis velit fugiat totam labore impedit et?',
             'content' => 'Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, laborum necessitatibus magni enim reiciendis velit fugiat totam labore impedit et?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, laborum necessitatibus magni enim reiciendis velit fugiat totam labore impedit et?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nesciunt, laborum necessitatibus magni enim reiciendis velit fugiat totam labore impedit et?',
             'photo_path' => 'image/ramla.png'
         ]);

@@ -371,7 +371,7 @@
 
   document.addEventListener("DOMContentLoaded", posts);
 
-  const myUrl =  'http://127.0.0.1:8000/api/data';
+  const myUrl =  'http://127.0.0.1:8000/api/sixnew';
 
 $.ajax({
     url: myUrl,

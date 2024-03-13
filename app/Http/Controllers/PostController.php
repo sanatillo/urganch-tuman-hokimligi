@@ -7,13 +7,23 @@ use Illuminate\Http\Request;
 
 class PostController extends Controller
 {
+    public function sixdata()
+    {
+        $posts = Post::orderBy('id', 'desc')->limit(6)->get();
+        return response()->json([
+            "posts" => $posts  //6 ta malumot qaytaradi
+        ]);
+    }
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        // $posts = Post::all();
-        // return view('news')->with('posts', $posts);
+        $posts = Post::all();
+        return response()->json([
+            "posts" => $posts
+        ]);
+
     }
 
     /**
@@ -35,11 +45,10 @@ class PostController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show($id)
+    public function show($id)//id routeda optional {id?} turbdi agar id berilmasa avtomat null o'zlashtiradi
     {
-        $post = Post::find($id);
-        
-    }
+        return response()->json(Post::find($id));//agar id ga urlda qiymat berilsa (?=if) id bo'yicha Post Modeldagi obyektni olib keladi
+    }   
 
     /**
      * Show the form for editing the specified resource.
@@ -64,4 +73,5 @@ class PostController extends Controller
     {
         //
     }
+    
 }

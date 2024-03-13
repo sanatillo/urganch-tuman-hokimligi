@@ -1,5 +1,4 @@
 <?php
-
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
@@ -18,5 +17,6 @@ class DatabaseSeeder extends Seeder
     $this->call(QabuljSeeder::class);     
     $this->call(AloqalariSeeder::class);  
     $this->call(MunosabatSeeder::class); 
+    $this->call(QilIshlarSeeder::class);//
     }
 }

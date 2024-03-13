@@ -47,7 +47,7 @@ class QabuljSeeder extends Seeder
             'nomer' =>6,
             'sana_vaqti'=>'2023 yil 6 oktabr soat 10-00',
             'qabul_mahalla_nomi' =>'“Arablar” va “Jayxun” mahallalari',
-            'qabul_joyi_nomi' =>'Arablar mahallasidagi 32-sonli maktab binosi'
-        ]);
+            'qabul_joyi_nomi' =>'Arablar mahallasidagi  32-sonli maktab binosi'
+        ]); 
     }
 }

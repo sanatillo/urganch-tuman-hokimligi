@@ -2,19 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Munosabat;
+use App\Models\Aloqalari;
 use Illuminate\Http\Request;
 
-class MunosabatController extends Controller
+class AloqalarController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $munosabat = Munosabat::all();
+        $aloqalar = Aloqalari::all();
         return response()->json([
-            'munosabatlar' => $munosabat,
+            'aloqalar' => $aloqalar
         ]);
     }
 

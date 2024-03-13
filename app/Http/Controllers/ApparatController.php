@@ -2,19 +2,23 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Munosabat;
+use App\Models\Apparat;
 use Illuminate\Http\Request;
 
-class MunosabatController extends Controller
+class ApparatController extends Controller
 {
+    // public function getoneData()
+    // {
+        //display one data from resource
+    // }
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $munosabat = Munosabat::all();
+        $apparats = Apparat::all();
         return response()->json([
-            'munosabatlar' => $munosabat,
+            "apparats" =>$apparats
         ]);
     }
 

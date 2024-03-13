@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('Aloqalaris', function (Blueprint $table) {
             $table->id();
-            $table->string('title',100);
-            $table->string('content');
-            $table->string('photo_path');       
+            $table->text('title');
+            $table->text('content');
+            $table->string('photo_path',100);       
             $table->timestamps();
         });
     }

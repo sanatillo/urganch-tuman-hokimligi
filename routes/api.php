@@ -2,17 +2,24 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ApiController;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\ApparatController;
+use App\Http\Controllers\AloqalarController;
+use App\Http\Controllers\MunosabatController;
+use App\Http\Controllers\QabuljController;
+use App\Http\Controllers\QilishlarController;
 
-Route::get('/data', [ApiController::class, 'data'])->name('posts');
+Route::get('/sixnew', [PostController::class, 'sixdata'])->name('posts');
+Route::resource('/news', PostController::class); //CRUD
 
-Route::get('/data/{id}',[ApiController::class, 'getoneData']);
+Route::resource('/apparats', ApparatController::class); //CRUD
 
-Route::get('/apparat', [ApiController::class, 'apparat'])->name('apparats');
+Route::resource('/aloqalari', AloqalarController::class ); //CRUD
 
-Route::get('/apparat/{id}', [ApiController::class, 'apparat']);
+Route::resource('/munosabatlar', MunosabatController::class); //CRUD
 
-Route::get('/qabulj',[ApiController::class, 'qabulj'])->name('qabulj');
+Route::resource('/qabuljadvali', QabuljController::class); //CRUD
 
+Route::resource('/qilishlar', QilishlarController::class); //CRUD
 
-
+// Route::resource('/')

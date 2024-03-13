@@ -11,8 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('qil_ishlars', function (Blueprint $table) {
+        Schema::create('Qilishlars', function (Blueprint $table) {
             $table->id();
+            $table->string('title',100);
+            $table->text('content');
+            $table->string('photo_path',100);
             $table->timestamps();
         });
     }
@@ -22,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('qil_ishlars');
+        Schema::dropIfExists('Qilishlars');
     }
 };
