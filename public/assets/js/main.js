@@ -241,7 +241,7 @@
    */
   const portfolioLightbox = GLightbox({
     selector: '.portfolio-lightbox'
-  }); 
+  });
 
   /**
    * Initiate glightbox 
@@ -280,3 +280,74 @@
   });
 
 })()
+
+
+let weather = document.querySelector("#weather"),
+  currency = document.querySelector("#currency")
+
+currency.addEventListener("click", () => {
+  weather.classList.remove("active")
+  currency.classList.add("active")
+})
+
+weather.addEventListener("click", () => {
+  currency.classList.remove("active")
+  weather.classList.add("active")
+})
+
+const today = new Date();
+const month = today.getMonth(); // 0 (January) to 11 (December)
+const year = today.getFullYear();
+
+function generateCalendar(month, year) {
+  const firstDay = (new Date(year, month)).getDay(); // Day of the week (0-6)
+  const daysInMonth = new Date(year, month + 1, 0).getDate();  // Number of days in the month
+
+  // Create table body rows and cells
+  const tbody = document.querySelector('tbody');
+  tbody.innerHTML = ''; // Clear existing content
+  let daysAdded = 0;
+  let currentRow = document.createElement('tr');
+
+  // Add leading empty cells for days before the first day of the month
+  for (let i = 0; i < firstDay; i++) {
+    const cell = document.createElement('td');
+    cell.classList.add('text-muted'); // Style empty cells
+    currentRow.appendChild(cell);
+    daysAdded++;
+  }
+
+  // Add date cells for each day of the month
+  for (let i = 1; i <= daysInMonth; i++) {
+    const cell = document.createElement('td');
+    cell.textContent = i;
+
+    // Highlight today's date
+    if (i === today.getDate() && month === today.getMonth() && year === today.getFullYear()) {
+      cell.classList.add('bg-primary', 'text-white');
+    }
+
+    currentRow.appendChild(cell);
+    daysAdded++;
+
+    // Add a new row if we reach the end of the week
+    if (daysAdded % 7 === 0) {
+      tbody.appendChild(currentRow);
+      currentRow = document.createElement('tr');
+    }
+  }
+
+  // Add trailing empty cells for days after the last day of the month
+  for (let i = daysAdded; i % 7 !== 0; i++) {
+    const cell = document.createElement('td');
+    cell.classList.add('text-muted'); // Style empty cells
+    currentRow.appendChild(cell);
+  }
+
+  if (daysAdded % 7 !== 0) {
+    tbody.appendChild(currentRow);
+  }
+}
+
+generateCalendar(month, year);
+

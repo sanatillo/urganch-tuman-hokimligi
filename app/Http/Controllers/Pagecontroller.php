@@ -51,4 +51,9 @@ class Pagecontroller extends Controller
     {
         return view("portfolioDetails");
     }
+
+    public function apparat()
+    {
+        return view("apparat");
+    }
 }

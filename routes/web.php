@@ -241,3 +241,5 @@ Route::get('/statistical', [Pagecontroller::class, 'statistical'])->name('statis
 Route::get('/portfolioDetails', [Pagecontroller::class, 'portfolioDetails'])->name('portfolioDetails');
 
 Route::get('/relationships', [Pagecontroller::class, 'relationships'])->name('relationships');
+
+Route::get('/apparat', [Pagecontroller::class, 'apparat'])->name('apparat');
