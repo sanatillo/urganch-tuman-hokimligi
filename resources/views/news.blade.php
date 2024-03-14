@@ -68,7 +68,6 @@
                             <li><a class="dropdown-item" href="#">Туман ҳокимлиги аппарати</a></li>
                             <li><a class="dropdown-item" href="#">Бошқарув аппаратининг тузилмаси</a></li>
                             <li><a class="dropdown-item" href="#">Қабул жадвали</a></li>
-                            <li><a class="dropdown-item" href="#">Ишонч ва ягона телефон рақамлари</a></li>
                             <li><a class="dropdown-item" href="#">Ҳорижий ва халқаро ҳамкорлик алоқалари</a></li>
                             <li><a class="dropdown-item" href="#">Бошқа давлат органлари билан ўзаро муносабатлар</a></li>
                             <li><a class="dropdown-item" href="#">Маҳаллий ва халқаро битимлар, шартномалар</a></li>

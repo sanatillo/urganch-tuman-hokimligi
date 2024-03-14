@@ -663,103 +663,21 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
 }
 
 .section-title h2 {
   font-size: 32px;
   font-weight: bold;
   text-transform: uppercase;
-  margin-bottom: 20px;
   padding-bottom: 0;
   color: #054a85;
+  margin-bottom: 0;
 }
 
 .section-title p {
   margin-bottom: 0;
   font-style: italic;
 }
-
-/*--------------------------------------------------------------
-# Clients
---------------------------------------------------------------*/
-/* .clients {
-  padding-bottom: 0;
-}
-
-.clients .swiper-slide a {
-  opacity: 0.5;
-  transition: 0.3s;
-}
-
-.clients .swiper-slide img {
-  position: relative;
-  margin-left: 100px;
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
-}
-
-.clients {
-  margin: 40px 0;
-}
-
-.clients .swiper-slide:hover a {
-  opacity: 1;
-}
-
-.clients .swiper-pagination {
-  margin-top: 60px;
-  position: relative;
-}
-
-.clients .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #0880e8;
-}
-
-.clients .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #0880e8;
-}
-
-.clients .owl-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 20px;
-}
-
-.clients .owl-item a {
-  width: 60%;
-  opacity: 0.5;
-  transition: 0.3s;
-}
-
-.clients .owl-item a:hover {
-  opacity: 1;
-}
-
-.clients .owl-nav,
-.clients .owl-dots {
-  margin-top: 5px;
-  text-align: center;
-}
-
-.clients .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #ddd !important;
-}
-
-.clients .owl-dot.active {
-  background-color: #0880e8 !important;
-} */
 
 /*--------------------------------------------------------------
 # Portfolio Details
@@ -1337,10 +1255,9 @@ body {
 .news-container {
   display: flex;
   flex-wrap: wrap;
-  /* Allows cards to wrap to next line on smaller screens */
-  margin: 20px auto;
+  margin: 0 auto;
   width: 80%;
-  /* Adjust width as needed */
+  padding-bottom: 0px;
 }
 
 .news-card {
@@ -1403,6 +1320,7 @@ body {
   font-style: italic;
   color: red;
   font-family: 'Times New Roman', Times, serif;
+  margin-left: 80px;
 }
 
 @media all and (max-width: 375px) {

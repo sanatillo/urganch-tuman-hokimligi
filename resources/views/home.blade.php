@@ -28,7 +28,7 @@
 </head>
 
 <body>
-  <marquee class="test">Hurmatli foydalanuvchilar ushbu sayti TEST rejimida ishlamoqda</marquee>
+  <p class="test">Hurmatli foydalanuvchilar ushbu sayti TEST rejimida ishlamoqda</p>
   <!-- ======= Top Bar ======= -->
   <div id="topbar" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
@@ -57,9 +57,8 @@
               <li><a class="dropdown-item" href="#">Туман ҳокимлиги аппарати</a></li>
               <li><a class="dropdown-item" href="#">Бошқарув аппаратининг тузилмаси</a></li>
               <li><a class="dropdown-item" href="#">Қабул жадвали</a></li>
-              <li><a class="dropdown-item" href="#">Ишонч ва ягона телефон рақамлари</a></li>
               <li><a class="dropdown-item" href="#">Ҳорижий ва халқаро ҳамкорлик алоқалари</a></li>
-              <li><a class="dropdown-item" href="">Бошқа давлат органлари билан ўзаро муносабатлар</a></li>
+              <li><a class="dropdown-item" href="#">Бошқа давлат органлари билан ўзаро муносабатлар</a></li>
               <li><a class="dropdown-item" href="#">Маҳаллий ва халқаро битимлар, шартномалар</a></li>
               <li><a class="dropdown-item" href="#">Кун тартиби, иш режаси ва йиғилиш масалалари</a></li>
               <li><a class="dropdown-item" href="#">Электрон ҳукумат доирасида қилинаётган ишлар</a></li>
@@ -148,69 +147,69 @@
   <main id="main">
   
   <!-- ======= Portfoio Section ======= -->
-    <section id="portfolio" class="portfoio container">
+    <section id="portfolio" class="portfoio container" style="padding-bottom: 0;">
       <div class="section-title">
         <h2>Янгиликлар</h2>
       </div>
 
 
-      <section class="news-container">
-        <article class="news-card">
+      <section class="news-container row">
+        <article class="news-card col-md-6">
             <div>
                 <img class="my-img">
                 <div class="card-content">
                   <h3 class="my-title">Title</h3>
-                  <p class="my-shortcontent">Short Content</p>
+                  <a href="#">more</a>
                 </div>
               </div>
         </article>
 
-        <article class="news-card">
+        <article class="news-card col-md-6">
             <a>
                 <img class="my-img">
                 <div class="card-content">
                     <h3 class="my-title">Title</h3>
-                    <p class="my-shortcontent">Short Content</p>
+                    <a href="#">more</a>
                 </div>
             </a>
         </article>
 
-        <article class="news-card">
+        <article class="news-card col-md-6">
             <a>
                 <img class="my-img">
                 <div class="card-content">
                     <h3 class="my-title">Title</h3>
-                    <p class="my-shortcontent">Short Content</p>
+                    <a href="#">more</a>
                 </div>
             </a>
         </article>
 
-        <article class="news-card">
+        <article class="news-card col-md-6">
             <a>
                 <img class="my-img">
                 <div class="card-content">
                     <h3 class="my-title">Title</h3>
-                    <p class="my-shortcontent">Short Content</p>
+                    <a href="#">more</a>
                 </div>
             </a>
         </article>
 
-        <article class="news-card">
+        <article class="news-card col-md-6">
             <a>
                 <img class="my-img">
                 <div class="card-content">
                     <h3 class="my-title">Title</h3>
-                    <p class="my-shortcontent">Short Content</p>
+                    <a href="#">more</a>
                 </div>
             </a>
         </article>
 
-        <article class="news-card">
+        <article class="news-card col-md-6">
             <a>
                 <img class="my-img">
                 <div class="card-content">
                     <h3 class="my-title">Title</h3>
-                    <p class="my-shortcontent">Short Content</p>
+                    <a href="#">more</a>
                 </div>
             </a>
         </article>
@@ -380,13 +379,9 @@ $.ajax({
     success: function (data) {
 
         let title = document.querySelectorAll(".my-title"),
-            shortContent = document.querySelectorAll(".my-shortcontent"),
             image = document.querySelectorAll(".my-img");
 
         for (let i = 0; i < 6; i++) {
-          if (data.posts[i].short_content.length > 30) {
-            shortContent[i].innerHTML = `${data.posts[i].short_content.slice(0, 80)}...<a style="display: inline;" href="#">batafsil</a>`;
-          }
           title[i].innerHTML = data.posts[i].title;
           image[i].src = data.posts[i].photo_path;
         }
