@@ -10,7 +10,7 @@ use App\Http\Livewire\Err404;
 use App\Http\Livewire\Err500;
 use App\Http\Livewire\Profile;
 use App\Http\Livewire\Dashboard;
-use App\Http\Livewire\Auth\Login;
+// use App\Http\Livewire\Auth\Login;
 use App\Http\Livewire\LoginExample;
 use App\Http\Livewire\Transactions;
 use App\Http\Livewire\Auth\Register;
@@ -283,7 +283,7 @@ Route::get('/apparat', [Pagecontroller::class, 'apparat'])->name('apparat');
 // Route::get('/500', Err500::class)->name('500');
 // Route::get('/upgrade-to-pro', UpgradeToPro::class)->name('upgrade-to-pro');
 
-Route::middleware('auth')->group(function () {
+// Route::middleware('auth')->group(function () {
     // Route::get('/profile', Profile::class)->name('profile');
 //     Route::get('/profile-example', ProfileExample::class)->name('profile-example');
 //     Route::get('/users', Users::class)->name('users');
@@ -300,4 +300,4 @@ Route::middleware('auth')->group(function () {
 //     Route::get('/forms', Forms::class)->name('forms');
 //     Route::get('/modals', Modals::class)->name('modals');
 //     Route::get('/typography', Typography::class)->name('typography');
-});
+// });
