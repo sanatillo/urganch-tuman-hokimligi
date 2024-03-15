@@ -56,4 +56,5 @@ class Pagecontroller extends Controller
     {
         return view("apparat");
     }
+
 }
