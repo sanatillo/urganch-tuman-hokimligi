@@ -28,7 +28,6 @@
 </head>
 
 <body>
-  <p class="test">Hurmatli foydalanuvchilar ushbu sayti TEST rejimida ishlamoqda</p>
   <!-- ======= Top Bar ======= -->
   <div id="topbar" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
@@ -36,6 +35,7 @@
         <i class="bi bi-envelope-fill"></i>info@urganchhokimiyat.uz
         <i class="bi bi-phone-fill phone-icon"></i> +998 (62) 352-28-43
       </div>
+      <p class="test">Hurmatli foydalanuvchilar ushbu sayti TEST rejimida ishlamoqda</p>
       <!-- <div class="search-form">
         <form action="">
           <input type="text">
@@ -54,11 +54,11 @@
           <li class="nav-item dropdown p-1">
             <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Туман хокимлиги</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Туман ҳокимлиги аппарати</a></li>
+              <li><a class="dropdown-item" href="{{route('apparat')}}">Туман ҳокимлиги аппарати</a></li>
               <li><a class="dropdown-item" href="#">Бошқарув аппаратининг тузилмаси</a></li>
               <li><a class="dropdown-item" href="#">Қабул жадвали</a></li>
               <li><a class="dropdown-item" href="#">Ҳорижий ва халқаро ҳамкорлик алоқалари</a></li>
-              <li><a class="dropdown-item" href="#">Бошқа давлат органлари билан ўзаро муносабатлар</a></li>
+              <li><a class="dropdown-item" href="{{route('relationships')}}">Бошқа давлат органлари билан ўзаро муносабатлар</a></li>
               <li><a class="dropdown-item" href="#">Маҳаллий ва халқаро битимлар, шартномалар</a></li>
               <li><a class="dropdown-item" href="#">Кун тартиби, иш режаси ва йиғилиш масалалари</a></li>
               <li><a class="dropdown-item" href="#">Электрон ҳукумат доирасида қилинаётган ишлар</a></li>
@@ -71,15 +71,15 @@
             <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Туман ҳақида</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="{{route('news')}}">Янгиликлар</a></li>
-              <li><a class="dropdown-item" href="{#">Тендер ва эълонлар</a></li>
+              <li><a class="dropdown-item" href="{{route('advert')}}">Тендер ва эълонлар</a></li>
               <li><a class="dropdown-item" href="#">Туман ҳақида маълумот</a></li>
               <li><a class="dropdown-item" href="#">Туман ташкилотлари</a></li>
-              <li><a class="dropdown-item" href="#">Маҳалла фуқоралар йиғинлари</a></li>
+              <li><a class="dropdown-item" href="{{route('neighbourhood')}}">Маҳалла фуқоралар йиғинлари</a></li>
               <li><a class="dropdown-item" href="#">Олий таълим муассасалари</a></li>
               <li><a class="dropdown-item" href="#">Мактабгача таълим муассасалари</a></li>
               <li><a class="dropdown-item" href="#">Умумий ўрта таълим мактаблар</a></li>
               <li><a class="dropdown-item" href="#">Касб-ҳунар коллежлари</a></li>
-              <li><a class="dropdown-item" href="#">Статистикалар</a></li>
+              <li><a class="dropdown-item" href="{{route('statistical')}}">Статистикалар</a></li>
               <li><a class="dropdown-item" href="#">Экология</a></li>
             </ul>
           </li>
@@ -114,7 +114,7 @@
               <li><a class="dropdown-item" href="https://lex.uz/acts/-1392614">Ўз кучини йўқотган меъёрий ҳужжатлари</a></li>
               <li><a class="dropdown-item" href="#">Туман ҳокимлиги иш юритиш йўриқномаси</a></li>
               <li><a class="dropdown-item" href="#">Расмий маърузалар</a></li>
-              <li><a class="dropdown-item" href="developed_party.html">Ишлаб чиқилган чора тадбирлар</a></li>
+              <li><a class="dropdown-item" href="{{route('developedParty')}}">Ишлаб чиқилган чора тадбирлар</a></li>
               <li><a class="dropdown-item" href="#">Аналитик хисобот ва тахлиллар</a></li>
               <li><a class="dropdown-item" href="#">Депутатлар фаолияти</a></li>
             </ul>
@@ -154,62 +154,56 @@
 
 
       <section class="news-container row">
-        <article class="news-card col-md-6">
+        <article class="news-card">
             <div>
                 <img class="my-img">
-                <div class="card-content">
+                <div class="card-content ">
                   <h3 class="my-title">Title</h3>
-                  <a href="#">more</a>
                 </div>
               </div>
         </article>
 
-        <article class="news-card col-md-6">
+        <article class="news-card ">
             <a>
                 <img class="my-img">
                 <div class="card-content">
                     <h3 class="my-title">Title</h3>
-                    <a href="#">more</a>
                 </div>
             </a>
         </article>
 
-        <article class="news-card col-md-6">
+        <article class="news-card">
             <a>
                 <img class="my-img">
                 <div class="card-content">
                     <h3 class="my-title">Title</h3>
-                    <a href="#">more</a>
                 </div>
             </a>
         </article>
 
-        <article class="news-card col-md-6">
+        <article class="news-card">
             <a>
                 <img class="my-img">
                 <div class="card-content">
                     <h3 class="my-title">Title</h3>
-                    <a href="#">more</a>
                 </div>
             </a>
         </article>
 
-        <article class="news-card col-md-6">
+        <article class="news-card">
             <a>
                 <img class="my-img">
                 <div class="card-content">
                     <h3 class="my-title">Title</h3>
-                    <a href="#">more</a>
                 </div>
             </a>
         </article>
 
-        <article class="news-card col-md-6">
+        <article class="news-card">
             <a>
                 <img class="my-img">
                 <div class="card-content">
                     <h3 class="my-title">Title</h3>
-                    <a href="#">more</a>
                 </div>
             </a>
         </article>
@@ -382,10 +376,11 @@ $.ajax({
             image = document.querySelectorAll(".my-img");
 
         for (let i = 0; i < 6; i++) {
-          title[i].innerHTML = data.posts[i].title;
+        if (true) {
+          title[i].innerHTML = data.posts[i].title+`...<a href="{{route('news')}}" class="glass-text">batafsil</a>`;
+        }
           image[i].src = data.posts[i].photo_path;
         }
-
     },
     error: function () {
         //alert("Data was not found");
