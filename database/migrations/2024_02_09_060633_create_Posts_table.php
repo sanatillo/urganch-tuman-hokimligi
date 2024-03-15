@@ -15,8 +15,8 @@ return new class extends Migration
             $table->id();
             $table->text('title');
             $table->text('content');
-            $table->text('short_content');
-            $table->integer('views_count');
+            // $table->text('short_content');
+            $table->string('news_category', 50);
             $table->string('photo_path');
             $table->timestamps();
         });
