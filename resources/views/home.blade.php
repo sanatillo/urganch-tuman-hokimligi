@@ -28,7 +28,6 @@
 </head>
 
 <body>
-  <p class="test">Hurmatli foydalanuvchilar ushbu sayti TEST rejimida ishlamoqda</p>
   <!-- ======= Top Bar ======= -->
   <div id="topbar" class="fixed-top d-flex align-items-center">
     <div class="container d-flex align-items-center justify-content-center justify-content-md-between">
@@ -36,6 +35,7 @@
         <i class="bi bi-envelope-fill"></i>info@urganchhokimiyat.uz
         <i class="bi bi-phone-fill phone-icon"></i> +998 (62) 352-28-43
       </div>
+      <p class="test">Hurmatli foydalanuvchilar ushbu sayti TEST rejimida ishlamoqda</p>
       <!-- <div class="search-form">
         <form action="">
           <input type="text">
@@ -54,11 +54,11 @@
           <li class="nav-item dropdown p-1">
             <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Туман хокимлиги</a>
             <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Туман ҳокимлиги аппарати</a></li>
+              <li><a class="dropdown-item" href="{{route('apparat')}}">Туман ҳокимлиги аппарати</a></li>
               <li><a class="dropdown-item" href="#">Бошқарув аппаратининг тузилмаси</a></li>
               <li><a class="dropdown-item" href="#">Қабул жадвали</a></li>
               <li><a class="dropdown-item" href="#">Ҳорижий ва халқаро ҳамкорлик алоқалари</a></li>
-              <li><a class="dropdown-item" href="#">Бошқа давлат органлари билан ўзаро муносабатлар</a></li>
+              <li><a class="dropdown-item" href="{{route('relationships')}}">Бошқа давлат органлари билан ўзаро муносабатлар</a></li>
               <li><a class="dropdown-item" href="#">Маҳаллий ва халқаро битимлар, шартномалар</a></li>
               <li><a class="dropdown-item" href="#">Кун тартиби, иш режаси ва йиғилиш масалалари</a></li>
               <li><a class="dropdown-item" href="#">Электрон ҳукумат доирасида қилинаётган ишлар</a></li>
@@ -71,15 +71,15 @@
             <a class="dropdown-item dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">Туман ҳақида</a>
             <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="{{route('news')}}">Янгиликлар</a></li>
-              <li><a class="dropdown-item" href="{#">Тендер ва эълонлар</a></li>
+              <li><a class="dropdown-item" href="{{route('advert')}}">Тендер ва эълонлар</a></li>
               <li><a class="dropdown-item" href="#">Туман ҳақида маълумот</a></li>
               <li><a class="dropdown-item" href="#">Туман ташкилотлари</a></li>
-              <li><a class="dropdown-item" href="#">Маҳалла фуқоралар йиғинлари</a></li>
+              <li><a class="dropdown-item" href="{{route('neighbourhood')}}">Маҳалла фуқоралар йиғинлари</a></li>
               <li><a class="dropdown-item" href="#">Олий таълим муассасалари</a></li>
               <li><a class="dropdown-item" href="#">Мактабгача таълим муассасалари</a></li>
               <li><a class="dropdown-item" href="#">Умумий ўрта таълим мактаблар</a></li>
               <li><a class="dropdown-item" href="#">Касб-ҳунар коллежлари</a></li>
-              <li><a class="dropdown-item" href="#">Статистикалар</a></li>
+              <li><a class="dropdown-item" href="{{route('statistical')}}">Статистикалар</a></li>
               <li><a class="dropdown-item" href="#">Экология</a></li>
             </ul>
           </li>
@@ -114,7 +114,7 @@
               <li><a class="dropdown-item" href="https://lex.uz/acts/-1392614">Ўз кучини йўқотган меъёрий ҳужжатлари</a></li>
               <li><a class="dropdown-item" href="#">Туман ҳокимлиги иш юритиш йўриқномаси</a></li>
               <li><a class="dropdown-item" href="#">Расмий маърузалар</a></li>
-              <li><a class="dropdown-item" href="developed_party.html">Ишлаб чиқилган чора тадбирлар</a></li>
+              <li><a class="dropdown-item" href="{{route('developedParty')}}">Ишлаб чиқилган чора тадбирлар</a></li>
               <li><a class="dropdown-item" href="#">Аналитик хисобот ва тахлиллар</a></li>
               <li><a class="dropdown-item" href="#">Депутатлар фаолияти</a></li>
             </ul>
@@ -149,73 +149,112 @@
   <!-- ======= Portfoio Section ======= -->
     <section id="portfolio" class="portfoio container" style="padding-bottom: 0;">
       <div class="section-title">
-        <h2>Янгиликлар</h2>
+        <h2 style="text-align: left;">Янгиликлар</h2>
       </div>
-
-
-      <section class="news-container row">
-        <article class="news-card col-md-6">
-            <div>
-                <img class="my-img">
-                <div class="card-content">
-                  <h3 class="my-title">Title</h3>
-                  <a href="#">more</a>
-                </div>
-              </div>
-        </article>
-
-        <article class="news-card col-md-6">
-            <a>
-                <img class="my-img">
-                <div class="card-content">
+      <div class="new-div">
+        <section class="news-container row" style="margin-left: -12px; width: 100%;">
+          <article class="news-card">
+              <div>
+                  <img class="my-img">
+                  <div class="card-content ">
                     <h3 class="my-title">Title</h3>
-                    <a href="#">more</a>
+                  </div>
                 </div>
-            </a>
-        </article>
+          </article>
 
-        <article class="news-card col-md-6">
-            <a>
-                <img class="my-img">
-                <div class="card-content">
-                    <h3 class="my-title">Title</h3>
-                    <a href="#">more</a>
-                </div>
-            </a>
-        </article>
+          <article class="news-card ">
+              <a>
+                  <img class="my-img">
+                  <div class="card-content">
+                      <h3 class="my-title">Title</h3>
+                  </div>
+              </a>
+          </article>
 
-        <article class="news-card col-md-6">
-            <a>
-                <img class="my-img">
-                <div class="card-content">
-                    <h3 class="my-title">Title</h3>
-                    <a href="#">more</a>
-                </div>
-            </a>
-        </article>
+          <article class="news-card">
+              <a>
+                  <img class="my-img">
+                  <div class="card-content">
+                      <h3 class="my-title">Title</h3>
+                  </div>
+              </a>
+          </article>
 
-        <article class="news-card col-md-6">
-            <a>
-                <img class="my-img">
-                <div class="card-content">
-                    <h3 class="my-title">Title</h3>
-                    <a href="#">more</a>
-                </div>
-            </a>
-        </article>
+          <article class="news-card">
+              <a>
+                  <img class="my-img">
+                  <div class="card-content">
+                      <h3 class="my-title">Title</h3>
+                  </div>
+              </a>
+          </article>
 
-        <article class="news-card col-md-6">
-            <a>
-                <img class="my-img">
-                <div class="card-content">
-                    <h3 class="my-title">Title</h3>
-                    <a href="#">more</a>
-                </div>
-            </a>
-        </article>
+          <article class="news-card">
+              <a>
+                  <img class="my-img">
+                  <div class="card-content">
+                      <h3 class="my-title">Title</h3>
+                  </div>
+              </a>
+          </article>
 
-    </section>
+          <article class="news-card">
+              <a>
+                  <img class="my-img">
+                  <div class="card-content">
+                      <h3 class="my-title">Title</h3>
+                  </div>
+              </a>
+          </article>
+        </section>
 
+        <div class="card" style="width: 18rem;">
+          <img src="/assets/img/hokim.jpg" class="card-img-top">
+          <div class="card-body">
+            <p class="card-text" style="
+                position: relative;
+                margin-top: -61px;
+                height: 40px;
+                background-color: lightgrey;
+                filter: opacity(0.8);
+                border: none;
+                border-radius: 6px;
+                padding-left: 10px;
+            ">
+            Urganch tumani hokimi <br> G‘ayratjon Sultonov</p>
+
+            <div class="calendar">
+        <div class="calendar-header">
+            <button  id="prevBtn">&lt;</button>
+            <h2 id="monthYear"></h2>
+            <button id="nextBtn">&gt;</button>
+        </div>
+        <div class="calendar-body">
+            <table class="calendar-table">
+                <thead>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody id="calendarBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+            <!-- <a href="https://lex.uz/docs/-6600413">
+              <img src="/assets/img/2030.jpg">
+            </a> -->
+
+          </div>
+        </div>
+
+      </div>
     </section>
 
     <!-- ======= Contact Section ======= -->
@@ -352,7 +391,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/commponent.js"></script>
+  <script src="assets/js/script.js"></script>
   <script>
     function posts() {
     $.ajax({
@@ -382,15 +421,81 @@ $.ajax({
             image = document.querySelectorAll(".my-img");
 
         for (let i = 0; i < 6; i++) {
-          title[i].innerHTML = data.posts[i].title;
+        if (true) {
+          title[i].innerHTML = data.posts[i].title+`...<a href="{{route('news')}}" class="glass-text">batafsil</a>`;
+        }
           image[i].src = data.posts[i].photo_path;
         }
-
     },
     error: function () {
         //alert("Data was not found");
     }
 })
+
+document.addEventListener('DOMContentLoaded', function () {
+    const currentDate = new Date();
+    let currentMonth = currentDate.getMonth();
+    let currentYear = currentDate.getFullYear();
+
+    const monthYearDisplay = document.getElementById('monthYear');
+    const calendarBody = document.getElementById('calendarBody');
+
+    function generateCalendar(month, year) {
+        const firstDayOfMonth = new Date(year, month, 1);
+        const daysInMonth = new Date(year, month + 1, 0).getDate();
+        const startingDay = firstDayOfMonth.getDay();
+
+        monthYearDisplay.textContent = `${getMonthName(month)} ${year}`;
+
+        let date = 1;
+        let calendarHTML = '';
+
+        for (let i = 0; i < 6; i++) {
+            calendarHTML += '<tr>';
+            for (let j = 0; j < 7; j++) {
+                if (i === 0 && j < startingDay) {
+                    calendarHTML += '<td></td>';
+                } else if (date > daysInMonth) {
+                    break;
+                } else {
+                    calendarHTML += `<td${(date === currentDate.getDate() && month === currentDate.getMonth() && year === currentDate.getFullYear()) ? ' class="current-month"' : ''}>${date}</td>`;
+                    date++;
+                }
+            }
+            calendarHTML += '</tr>';
+            if (date > daysInMonth) {
+                break;
+            }
+        }
+
+        calendarBody.innerHTML = calendarHTML;
+    }
+
+    function getMonthName(monthIndex) {
+        const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        return months[monthIndex];
+    }
+
+    generateCalendar(currentMonth, currentYear);
+
+    document.getElementById('prevBtn').addEventListener('click', function () {
+        currentMonth--;
+        if (currentMonth < 0) {
+            currentMonth = 11;
+            currentYear--;
+        }
+        generateCalendar(currentMonth, currentYear);
+    });
+
+    document.getElementById('nextBtn').addEventListener('click', function () {
+        currentMonth++;
+        if (currentMonth > 11) {
+            currentMonth = 0;
+            currentYear++;
+        }
+        generateCalendar(currentMonth, currentYear);
+    });
+});
   </script>
 
 </body>
