@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('Apparats', function (Blueprint $table) {
             $table->id();
-            $table->string('ismi');
+            $table->string('ismi_sharifi');
+            $table->string('hodim_malumotlari');
             $table->string('kasbi');
             $table->string('photo_path');
             $table->string('telnumber');

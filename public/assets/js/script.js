@@ -3,12 +3,10 @@ let btn = document.querySelector("#btn");
 
 
 btn.addEventListener('click', function () {
-        if (p.style.display == "none") {
-            p.style.display = "block";
-        } else {
-            p.style.display = "none";
-        }
+    if (p.style.display == "none") {
+        p.style.display = "block";
+    } else {
+        p.style.display = "none";
+    }
 
 })
-
-
