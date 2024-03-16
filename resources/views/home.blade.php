@@ -149,67 +149,112 @@
   <!-- ======= Portfoio Section ======= -->
     <section id="portfolio" class="portfoio container" style="padding-bottom: 0;">
       <div class="section-title">
-        <h2>Янгиликлар</h2>
+        <h2 style="text-align: left;">Янгиликлар</h2>
       </div>
-
-
-      <section class="news-container row">
-        <article class="news-card">
-            <div>
-                <img class="my-img">
-                <div class="card-content ">
-                  <h3 class="my-title">Title</h3>
-                </div>
-              </div>
-        </article>
-
-        <article class="news-card ">
-            <a>
-                <img class="my-img">
-                <div class="card-content">
+      <div class="new-div">
+        <section class="news-container row" style="margin-left: -12px; width: 100%;">
+          <article class="news-card">
+              <div>
+                  <img class="my-img">
+                  <div class="card-content ">
                     <h3 class="my-title">Title</h3>
+                  </div>
                 </div>
-            </a>
-        </article>
+          </article>
 
-        <article class="news-card">
-            <a>
-                <img class="my-img">
-                <div class="card-content">
-                    <h3 class="my-title">Title</h3>
-                </div>
-            </a>
-        </article>
+          <article class="news-card ">
+              <a>
+                  <img class="my-img">
+                  <div class="card-content">
+                      <h3 class="my-title">Title</h3>
+                  </div>
+              </a>
+          </article>
 
-        <article class="news-card">
-            <a>
-                <img class="my-img">
-                <div class="card-content">
-                    <h3 class="my-title">Title</h3>
-                </div>
-            </a>
-        </article>
+          <article class="news-card">
+              <a>
+                  <img class="my-img">
+                  <div class="card-content">
+                      <h3 class="my-title">Title</h3>
+                  </div>
+              </a>
+          </article>
 
-        <article class="news-card">
-            <a>
-                <img class="my-img">
-                <div class="card-content">
-                    <h3 class="my-title">Title</h3>
-                </div>
-            </a>
-        </article>
+          <article class="news-card">
+              <a>
+                  <img class="my-img">
+                  <div class="card-content">
+                      <h3 class="my-title">Title</h3>
+                  </div>
+              </a>
+          </article>
 
-        <article class="news-card">
-            <a>
-                <img class="my-img">
-                <div class="card-content">
-                    <h3 class="my-title">Title</h3>
-                </div>
-            </a>
-        </article>
+          <article class="news-card">
+              <a>
+                  <img class="my-img">
+                  <div class="card-content">
+                      <h3 class="my-title">Title</h3>
+                  </div>
+              </a>
+          </article>
 
-    </section>
+          <article class="news-card">
+              <a>
+                  <img class="my-img">
+                  <div class="card-content">
+                      <h3 class="my-title">Title</h3>
+                  </div>
+              </a>
+          </article>
+        </section>
 
+        <div class="card" style="width: 18rem;">
+          <img src="/assets/img/hokim.jpg" class="card-img-top">
+          <div class="card-body">
+            <p class="card-text" style="
+                position: relative;
+                margin-top: -61px;
+                height: 40px;
+                background-color: lightgrey;
+                filter: opacity(0.8);
+                border: none;
+                border-radius: 6px;
+                padding-left: 10px;
+            ">
+            Urganch tumani hokimi <br> G‘ayratjon Sultonov</p>
+
+            <div class="calendar">
+        <div class="calendar-header">
+            <button  id="prevBtn">&lt;</button>
+            <h2 id="monthYear"></h2>
+            <button id="nextBtn">&gt;</button>
+        </div>
+        <div class="calendar-body">
+            <table class="calendar-table">
+                <thead>
+                    <tr>
+                        <th>Sun</th>
+                        <th>Mon</th>
+                        <th>Tue</th>
+                        <th>Wed</th>
+                        <th>Thu</th>
+                        <th>Fri</th>
+                        <th>Sat</th>
+                    </tr>
+                </thead>
+                <tbody id="calendarBody"></tbody>
+            </table>
+        </div>
+    </div>
+
+            <!-- <a href="https://lex.uz/docs/-6600413">
+              <img src="/assets/img/2030.jpg">
+            </a> -->
+
+          </div>
+        </div>
+
+      </div>
     </section>
 
     <!-- ======= Contact Section ======= -->
@@ -346,7 +391,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/commponent.js"></script>
+  <script src="assets/js/script.js"></script>
   <script>
     function posts() {
     $.ajax({
@@ -386,6 +431,73 @@ $.ajax({
         //alert("Data was not found");
     }
 })
+
+document.addEventListener('DOMContentLoaded', function () {
+    const currentDate = new Date();
+    let currentMonth = currentDate.getMonth();
+    let currentYear = currentDate.getFullYear();
+
+    const monthYearDisplay = document.getElementById('monthYear');
+    const calendarBody = document.getElementById('calendarBody');
+
+    function generateCalendar(month, year) {
+        const firstDayOfMonth = new Date(year, month, 1);
+        const daysInMonth = new Date(year, month + 1, 0).getDate();
+        const startingDay = firstDayOfMonth.getDay();
+
+        monthYearDisplay.textContent = `${getMonthName(month)} ${year}`;
+
+        let date = 1;
+        let calendarHTML = '';
+
+        for (let i = 0; i < 6; i++) {
+            calendarHTML += '<tr>';
+            for (let j = 0; j < 7; j++) {
+                if (i === 0 && j < startingDay) {
+                    calendarHTML += '<td></td>';
+                } else if (date > daysInMonth) {
+                    break;
+                } else {
+                    calendarHTML += `<td${(date === currentDate.getDate() && month === currentDate.getMonth() && year === currentDate.getFullYear()) ? ' class="current-month"' : ''}>${date}</td>`;
+                    date++;
+                }
+            }
+            calendarHTML += '</tr>';
+            if (date > daysInMonth) {
+                break;
+            }
+        }
+
+        calendarBody.innerHTML = calendarHTML;
+    }
+
+    function getMonthName(monthIndex) {
+        const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        return months[monthIndex];
+    }
+
+    generateCalendar(currentMonth, currentYear);
+
+    document.getElementById('prevBtn').addEventListener('click', function () {
+        currentMonth--;
+        if (currentMonth < 0) {
+            currentMonth = 11;
+            currentYear--;
+        }
+        generateCalendar(currentMonth, currentYear);
+    });
+
+    document.getElementById('nextBtn').addEventListener('click', function () {
+        currentMonth++;
+        if (currentMonth > 11) {
+            currentMonth = 0;
+            currentYear++;
+        }
+        generateCalendar(currentMonth, currentYear);
+    });
+});
+
+
   </script>
 
 </body>

@@ -1,7 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Google Fonts -->
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- Vendor CSS Files -->
+    <link rel="stylesheet" href="assets/vendor/animate.css/animate.min.css">
+    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+</head>
+
+<body>
 
 <x-main>
 
-  <x-news>{{$title}}</x-news>
 
     <main id="main">
 
@@ -108,8 +138,18 @@
                                   <li class="nav-item">
                                     <a class="nav-link active" id="weather" aria-current="true">Weather</a>
                                   </li>
+                              </div>
+                              <div class="card-body">
+                                <h5 class="card-title">Special title treatment</h5>
+                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+                              </div>
+                            </div>
+
+                            <div class="card text-center">
+                              <div class="card-header">
+                                <ul class="nav nav-tabs card-header-tabs">
                                   <li class="nav-item">
-                                    <a class="nav-link text-black" id="currency" aria-current="true">Currency</a>
+                                    <a class="nav-link active" id="weather" aria-current="true">Weather</a>
                                   </li>
                               </div>
                               <div class="card-body">
@@ -117,6 +157,7 @@
                                 <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
                               </div>
                             </div>
+
 
                               <div class="row">
                                 <div class="col-md-12">
@@ -158,11 +199,7 @@
                                   </div>
                                 </div>
                               </div>
-
                     </div>
-
-
-
                 </div>
         </section><!-- End Blog Section -->
 

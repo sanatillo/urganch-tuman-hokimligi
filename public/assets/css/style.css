@@ -1293,7 +1293,18 @@ body {
   font-size: 12px;
 }
 
+/* new new code eee*/
+.new-div {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+
 /* Media Queries for Responsiveness */
+@media (max-width: 576px) {
+  .news-card {
+    width: 100%;
+  }
+}
 
 @media (max-width: 768px) {
   .news-card {
@@ -1301,11 +1312,6 @@ body {
   }
 }
 
-@media (max-width: 576px) {
-  .news-card {
-    width: 100%;
-  }
-}
 
 @media (max-width: 992px) {
   .news-card {
@@ -1333,4 +1339,58 @@ body {
 .glass-text {
   color: rgb(90, 144, 245);
   font-size: 12px;
+}
+
+
+.calendar {
+  font-family: Arial, sans-serif;
+  width: 249px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.calendar-header {
+  background-color: #f2f2f2;
+  text-align: center;
+  padding: 10px;
+}
+
+.calendar-header h2 {
+  margin: 0;
+  display: contents;
+  font-size: 20px;
+}
+
+.calendar-body {
+  padding: 0px;
+}
+
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.calendar-table th,
+.calendar-table td {
+  padding: 1px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.calendar-table th {
+  background-color: #ddd;
+}
+
+.current-month {
+  background-color: #e6e6e6;
+}
+
+button {
+  border: none;
+  border-radius: 100px;
+  background-color: #c1c1c15e;
+  width: 25px;
+  height: 25px;
 }
