@@ -112,10 +112,6 @@ h6 {
   font-size: 14px;
   transition: all 0.5s;
   overflow: hidden;
-<<<<<<< HEAD:assets/css/style.css
-  /* color: rgba(255, 255, 255, 0.8); */
-=======
->>>>>>> backend:public/assets/css/style.css
   color: rgba(5, 87, 158, 0.9);
   z-index: 996;
 }
@@ -223,12 +219,7 @@ h6 {
 # Header
 --------------------------------------------------------------*/
 #header {
-<<<<<<< HEAD:assets/css/style.css
   background: rgba(33, 118, 192, 0.9); /* rgba(0, 0, 0, 0.1) */
-=======
-  background: rgba(33, 118, 192, 0.9);
-  /* rgba(0, 0, 0, 0.1) */
->>>>>>> backend:public/assets/css/style.css
   transition: all 0.5s;
   z-index: 997;
   height: 70px;
@@ -645,12 +636,8 @@ h6 {
   }
 }
 
-<<<<<<< HEAD:assets/css/style.css
-@media (max-width: 768px) and
-(min-height: 700px) {
-=======
+
 @media (max-width: 768px) and (min-height: 700px) {
->>>>>>> backend:public/assets/css/style.css
   #hero {
     height: 120vh;
     padding: 100px 0;
@@ -692,90 +679,6 @@ section {
 }
 
 /*--------------------------------------------------------------
-<<<<<<< HEAD:assets/css/style.css
-# Clients
---------------------------------------------------------------*/
-/* .clients {
-  padding-bottom: 0;
-}
-
-.clients .swiper-slide a {
-  opacity: 0.5;
-  transition: 0.3s;
-}
-
-.clients .swiper-slide img {
-  position: relative;
-  margin-left: 100px;
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
-}
-
-.clients {
-  margin: 40px 0;
-}
-
-.clients .swiper-slide:hover a {
-  opacity: 1;
-}
-
-.clients .swiper-pagination {
-  margin-top: 60px;
-  position: relative;
-}
-
-.clients .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #0880e8;
-}
-
-.clients .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #0880e8;
-}
-
-.clients .owl-item {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 20px;
-}
-
-.clients .owl-item a {
-  width: 60%;
-  opacity: 0.5;
-  transition: 0.3s;
-}
-
-.clients .owl-item a:hover {
-  opacity: 1;
-}
-
-.clients .owl-nav,
-.clients .owl-dots {
-  margin-top: 5px;
-  text-align: center;
-}
-
-.clients .owl-dot {
-  display: inline-block;
-  margin: 0 5px;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #ddd !important;
-}
-
-.clients .owl-dot.active {
-  background-color: #0880e8 !important;
-} */
-
-/*--------------------------------------------------------------
-=======
->>>>>>> backend:public/assets/css/style.css
 # Portfolio Details
 --------------------------------------------------------------*/
 .portfolio-details {
@@ -1268,16 +1171,11 @@ section {
   color: #f6b024;
 }
 
-<<<<<<< HEAD:assets/css/style.css
-.card-text{
-=======
 .card-text {
->>>>>>> backend:public/assets/css/style.css
   font-size: 13px;
   margin-bottom: 7px !important;
 }
 
-<<<<<<< HEAD:assets/css/style.css
 .card-text .text-body-secondary{
   font-size: 12px;
 }
@@ -1288,7 +1186,7 @@ section {
 
 .card-body{
   padding: 2 5px !important;
-=======
+}
 .card-text .text-body-secondary {
   font-size: 12px;
 }
@@ -1300,9 +1198,6 @@ section {
 .card-body {
   padding: 2 5px !important;
 }
-
-
-
 
 .my-container {
   display: flex;
@@ -1443,5 +1338,4 @@ body {
   .card{
     width: 100%;
   }
->>>>>>> backend:public/assets/css/style.css
 }
