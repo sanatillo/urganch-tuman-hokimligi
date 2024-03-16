@@ -1387,7 +1387,8 @@ body {
   background-color: #e6e6e6;
 }
 
-button {
+#prevBtn,
+#nextBtn{
   border: none;
   border-radius: 100px;
   background-color: #c1c1c15e;
