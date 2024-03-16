@@ -496,8 +496,6 @@ document.addEventListener('DOMContentLoaded', function () {
         generateCalendar(currentMonth, currentYear);
     });
 });
-
-
   </script>
 
 </body>
