@@ -170,73 +170,6 @@
   }
 
   /**
-   * Clients Slider
-   */
-  new Swiper('.clients-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    slidesPerView: 'auto',
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 2,
-        spaceBetween: 40
-      },
-      480: {
-        slidesPerView: 3,
-        spaceBetween: 60
-      },
-      640: {
-        slidesPerView: 4,
-        spaceBetween: 80
-      },
-      992: {
-        slidesPerView: 6,
-        spaceBetween: 120
-      }
-    }
-  });
-
-  /**
-   * Porfolio isotope and filter
-   */
-  window.addEventListener('load', () => {
-    let portfolioContainer = select('.portfolio-container');
-    if (portfolioContainer) {
-      let portfolioIsotope = new Isotope(portfolioContainer, {
-        itemSelector: '.portfolio-item',
-        layoutMode: 'fitRows'
-      });
-
-      let portfolioFilters = select('#portfolio-flters li', true);
-
-      on('click', '#portfolio-flters li', function (e) {
-        e.preventDefault();
-        portfolioFilters.forEach(function (el) {
-          el.classList.remove('filter-active');
-        });
-        this.classList.add('filter-active');
-
-        portfolioIsotope.arrange({
-          filter: this.getAttribute('data-filter')
-        });
-        portfolioIsotope.on('arrangeComplete', function () {
-          AOS.refresh()
-        });
-      }, true);
-    }
-
-  });
-
-  /**
    * Initiate portfolio lightbox 
    */
   const portfolioLightbox = GLightbox({
@@ -248,23 +181,6 @@
    */
   const gLightbox = GLightbox({
     selector: '.glightbox'
-  });
-
-  /**
-   * Portfolio details slider
-   */
-  new Swiper('.portfolio-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
   });
 
   /**
@@ -280,74 +196,4 @@
   });
 
 })()
-
-
-let weather = document.querySelector("#weather"),
-  currency = document.querySelector("#currency")
-
-currency.addEventListener("click", () => {
-  weather.classList.remove("active")
-  currency.classList.add("active")
-})
-
-weather.addEventListener("click", () => {
-  currency.classList.remove("active")
-  weather.classList.add("active")
-})
-
-const today = new Date();
-const month = today.getMonth(); // 0 (January) to 11 (December)
-const year = today.getFullYear();
-
-function generateCalendar(month, year) {
-  const firstDay = (new Date(year, month)).getDay(); // Day of the week (0-6)
-  const daysInMonth = new Date(year, month + 1, 0).getDate();  // Number of days in the month
-
-  // Create table body rows and cells
-  const tbody = document.querySelector('tbody');
-  tbody.innerHTML = ''; // Clear existing content
-  let daysAdded = 0;
-  let currentRow = document.createElement('tr');
-
-  // Add leading empty cells for days before the first day of the month
-  for (let i = 0; i < firstDay; i++) {
-    const cell = document.createElement('td');
-    cell.classList.add('text-muted'); // Style empty cells
-    currentRow.appendChild(cell);
-    daysAdded++;
-  }
-
-  // Add date cells for each day of the month
-  for (let i = 1; i <= daysInMonth; i++) {
-    const cell = document.createElement('td');
-    cell.textContent = i;
-
-    // Highlight today's date
-    if (i === today.getDate() && month === today.getMonth() && year === today.getFullYear()) {
-      cell.classList.add('bg-primary', 'text-white');
-    }
-
-    currentRow.appendChild(cell);
-    daysAdded++;
-
-    // Add a new row if we reach the end of the week
-    if (daysAdded % 7 === 0) {
-      tbody.appendChild(currentRow);
-      currentRow = document.createElement('tr');
-    }
-  }
-
-  // Add trailing empty cells for days after the last day of the month
-  for (let i = daysAdded; i % 7 !== 0; i++) {
-    const cell = document.createElement('td');
-    cell.classList.add('text-muted'); // Style empty cells
-    currentRow.appendChild(cell);
-  }
-
-  if (daysAdded % 7 !== 0) {
-    tbody.appendChild(currentRow);
-  }
-}
-
-generateCalendar(month, year);
 

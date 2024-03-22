@@ -5,27 +5,16 @@
     <meta charset="utf-8">
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     
+    <title>Янгиликлар</title>
+
     <meta content="" name="description">
     <meta content="" name="keywords">
 
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet">
+    
+    <x-link>
+        <!-- css links -->
+    </x-link>
 
-    <!-- Vendor CSS Files -->
-    <link rel="stylesheet" href="assets/vendor/animate.css/animate.min.css">
-    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
 </head>
 
 <body>
@@ -115,14 +104,14 @@
                                 </div>
                             </div>
                         </div>
-                    
-                    
+                        
+                        
                     </div><!-- End blog entries list -->
-
+                    
                     <div class="col-lg-4 col-sm-12">
-
+                        
                         <div class="sidebar">
-
+                            
                             <h3 class="sidebar-title">Кидириш</h3>
                             <div class="sidebar-item search-form">
                                 <form action="">
@@ -130,75 +119,44 @@
                                     <button type="submit"><i class="bi bi-search"></i></button>
                                 </form>
                             </div><!-- End sidebar search formn -->
-                        </div><!-- End blog sidebar -->
-
-                            <div class="card text-center">
-                              <div class="card-header">
-                                <ul class="nav nav-tabs card-header-tabs">
-                                  <li class="nav-item">
-                                    <a class="nav-link active" id="weather" aria-current="true">Weather</a>
-                                  </li>
-                              </div>
+                            
+                            <!-- <div class="card"> -->
+                              <!-- <img src="/assets/img/hokim.jpg" class="card-img-top">
                               <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                              </div>
-                            </div>
-
-                            <div class="card text-center">
-                              <div class="card-header">
-                                <ul class="nav nav-tabs card-header-tabs">
-                                  <li class="nav-item">
-                                    <a class="nav-link active" id="weather" aria-current="true">Weather</a>
-                                  </li>
-                              </div>
-                              <div class="card-body">
-                                <h5 class="card-title">Special title treatment</h5>
-                                <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                              </div>
-                            </div>
-
-
-                              <div class="row">
-                                <div class="col-md-12">
-                                  <div class="card">
-                                    <div class="card-header d-flex justify-content-between">
-                                      <h5 class="mb-0">March 2024</h5>
-                                      <nav aria-label="Page navigation example">
-                                        <ul class="pagination justify-content-end mb-0">
-                                          <li class="page-item disabled">
-                                            <a class="page-link" href="#" aria-label="Previous">
-                                              <span aria-hidden="true">&laquo;</span>
-                                            </a>
-                                          </li>
-                                          <li class="page-item disabled">
-                                            <a class="page-link" href="#" aria-label="Next">
-                                              <span aria-hidden="true">&raquo;</span>
-                                            </a>
-                                          </li>
-                                        </ul>
-                                      </nav>
-                                    </div>
-                                    <div class="card-body">
-                                      <table class="table table-bordered table-sm">
-                                        <thead>
-                                          <tr>
-                                            <th scope="col">Sun</th>
-                                            <th scope="col">Mon</th>
-                                            <th scope="col">Tue</th>
-                                            <th scope="col">Wed</th>
-                                            <th scope="col">Thu</th>
-                                            <th scope="col">Fri</th>
-                                            <th scope="col">Sat</th>
-                                          </tr>
-                                        </thead>
-                                        <tbody>
-                                          </tbody>
-                                      </table>
-                                    </div>
-                                  </div>
+                                <p class="card-text">
+                                Urganch tumani hokimi <br> G‘ayratjon Sultonov
+                                </p> -->
+                              <div class="calendar">
+                                <div class="calendar-header">
+                                  <button  id="prevBtn">&lt;</button>
+                                  <h2 id="monthYear"></h2>
+                                  <button id="nextBtn">&gt;</button>
+                                </div>
+                                <div class="calendar-body">
+                                  <table class="calendar-table">
+                                    <thead>
+                                      <tr>
+                                        <th>Sun</th>
+                                        <th>Mon</th>
+                                        <th>Tue</th>
+                                        <th>Wed</th>
+                                        <th>Thu</th>
+                                        <th>Fri</th>
+                                        <th>Sat</th>
+                                      </tr>
+                                    </thead>
+                                    <tbody id="calendarBody"></tbody>
+                                  </table>
                                 </div>
                               </div>
+                                <a href="https://lex.uz/docs/-6600413">
+                                  <img id="img-2030" src="/assets/img/2030.jpg">
+                                </a>
+                              </div>
+                            <!-- </div> -->
+                        </div><!-- End blog sidebar -->
+
+                        </div>
                     </div>
                 </div>
         </section><!-- End Blog Section -->
@@ -211,18 +169,10 @@
     <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
             class="bi bi-arrow-up-short"></i></a>
 
-    <!-- Vendor JS Files -->
-    <script src="assets/vendor/aos/aos.js"></script>
-    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-    <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-    <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-    <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-    
-    <!-- Template Main JS File -->
-    <script src="assets/js/main.js"></script>
-    <script src="assets/js/commponent.js"></script>
+    <x-js-link>
+        <!-- js links -->
+    </x-js-link>
+
     <script>
     function posts() {
     $.ajax({
@@ -262,6 +212,70 @@ $.ajax({
         alert("Data was not found");
     }
 })
+
+document.addEventListener('DOMContentLoaded', function () {
+    const currentDate = new Date();
+    let currentMonth = currentDate.getMonth();
+    let currentYear = currentDate.getFullYear();
+
+    const monthYearDisplay = document.getElementById('monthYear');
+    const calendarBody = document.getElementById('calendarBody');
+
+    function generateCalendar(month, year) {
+        const firstDayOfMonth = new Date(year, month, 1);
+        const daysInMonth = new Date(year, month + 1, 0).getDate();
+        const startingDay = firstDayOfMonth.getDay();
+
+        monthYearDisplay.textContent = `${getMonthName(month)} ${year}`;
+
+        let date = 1;
+        let calendarHTML = '';
+
+        for (let i = 0; i < 6; i++) {
+            calendarHTML += '<tr>';
+            for (let j = 0; j < 7; j++) {
+                if (i === 0 && j < startingDay) {
+                    calendarHTML += '<td></td>';
+                } else if (date > daysInMonth) {
+                    break;
+                } else {
+                    calendarHTML += `<td${(date === currentDate.getDate() && month === currentDate.getMonth() && year === currentDate.getFullYear()) ? ' class="current-month"' : ''}>${date}</td>`;
+                    date++;
+                }
+            }
+            calendarHTML += '</tr>';
+            if (date > daysInMonth) {
+                break;
+            }
+        }
+        calendarBody.innerHTML = calendarHTML;
+    }
+
+    function getMonthName(monthIndex) {
+        const months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+        return months[monthIndex];
+    }
+
+    generateCalendar(currentMonth, currentYear);
+
+    document.getElementById('prevBtn').addEventListener('click', function () {
+        currentMonth--;
+        if (currentMonth < 0) {
+            currentMonth = 11;
+            currentYear--;
+        }
+        generateCalendar(currentMonth, currentYear);
+    });
+
+    document.getElementById('nextBtn').addEventListener('click', function () {
+        currentMonth++;
+        if (currentMonth > 11) {
+            currentMonth = 0;
+            currentYear++;
+        }
+        generateCalendar(currentMonth, currentYear);
+    });
+});
     </script>
 
 </body>

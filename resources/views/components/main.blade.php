@@ -19,7 +19,7 @@
                             Туман хокимлиги
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="news.html">Туман ҳокимлиги аппарати</a></li>
+                            <li><a class="dropdown-item" href="#">Туман ҳокимлиги аппарати</a></li>
                             <li><a class="dropdown-item" href="news.html">Бошқарув аппаратининг тузилмаси</a></li>
                             <li><a class="dropdown-item" href="news.html">Қабул жадвали</a></li>
                             <li><a class="dropdown-item" href="news.html">Ҳорижий ва халқаро ҳамкорлик алоқалари</a></li>

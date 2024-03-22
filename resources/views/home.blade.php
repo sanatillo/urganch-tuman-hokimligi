@@ -7,23 +7,9 @@
 
   <title>Урганч туман ҳокимлиги расмий веб сайти</title>
 
-  <!-- Google Fonts -->
-  <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-    rel="stylesheet">
-
-  <!-- Vendor CSS Files -->
-  <link href="/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-  <link href="/assets/vendor/aos/aos.css" rel="stylesheet">
-  <link href="/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
-
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <x-link>
+    <!-- css links -->
+  </x-link>
 
 </head>
 
@@ -64,7 +50,7 @@
               <li><a class="dropdown-item" href="#">Электрон ҳукумат доирасида қилинаётган ишлар</a></li>
               <li><a class="dropdown-item" href="#">Ҳокимлик иштирокидаги тадбирлар</a></li>
               <li><a class="dropdown-item" href="#">Бўш иш ўринлари</a></li>
-              <li><a class="dropdown-item" href="#">Манзил</a></li>
+              <li><a class="dropdown-item" href="#footer">Манзил</a></li>
             </ul>
           </li>
           <li class="nav-item dropdown p-1">
@@ -147,113 +133,102 @@
   <main id="main">
   
   <!-- ======= Portfoio Section ======= -->
-    <section id="portfolio" class="portfoio container" style="padding-bottom: 0;">
+    <section id="portfolio" class="portfoio">
       <div class="section-title">
-        <h2 style="text-align: left;">Янгиликлар</h2>
+        <h2 id="news-h">Янгиликлар<span></span></h2>
       </div>
       <div class="new-div">
-        <section class="news-container row" style="margin-left: -12px; width: 100%;">
+        <section class="news-container row">
+          
           <article class="news-card">
-              <div>
-                  <img class="my-img">
-                  <div class="card-content ">
-                    <h3 class="my-title">Title</h3>
-                  </div>
-                </div>
+            <div>
+              <img class="my-img">
+              <div class="card-content ">
+                <h3 class="my-title">Title</h3>
+              </div>
+            </div>
           </article>
 
           <article class="news-card ">
-              <a>
-                  <img class="my-img">
-                  <div class="card-content">
-                      <h3 class="my-title">Title</h3>
-                  </div>
-              </a>
+            <a>
+              <img class="my-img">
+              <div class="card-content">
+                  <h3 class="my-title">Title</h3>
+              </div>
+            </a>
           </article>
 
           <article class="news-card">
-              <a>
-                  <img class="my-img">
-                  <div class="card-content">
-                      <h3 class="my-title">Title</h3>
-                  </div>
-              </a>
+            <a>
+              <img class="my-img">
+              <div class="card-content">
+                  <h3 class="my-title">Title</h3>
+              </div>
+            </a>
           </article>
 
           <article class="news-card">
-              <a>
-                  <img class="my-img">
-                  <div class="card-content">
-                      <h3 class="my-title">Title</h3>
-                  </div>
-              </a>
+            <a>
+              <img class="my-img">
+              <div class="card-content">
+                  <h3 class="my-title">Title</h3>
+              </div>
+            </a>
           </article>
 
           <article class="news-card">
-              <a>
-                  <img class="my-img">
-                  <div class="card-content">
-                      <h3 class="my-title">Title</h3>
-                  </div>
-              </a>
+            <a>
+              <img class="my-img">
+              <div class="card-content">
+                  <h3 class="my-title">Title</h3>
+              </div>
+            </a>
           </article>
 
           <article class="news-card">
-              <a>
-                  <img class="my-img">
-                  <div class="card-content">
-                      <h3 class="my-title">Title</h3>
-                  </div>
-              </a>
+            <a>
+              <img class="my-img">
+              <div class="card-content">
+                <h3 class="my-title">Title</h3>
+              </div>
+            </a>
           </article>
         </section>
 
-        <div class="card" style="width: 18rem;">
+        <div class="card">
           <img src="/assets/img/hokim.jpg" class="card-img-top">
           <div class="card-body">
-            <p class="card-text" style="
-                position: relative;
-                margin-top: -61px;
-                height: 40px;
-                background-color: lightgrey;
-                filter: opacity(0.8);
-                border: none;
-                border-radius: 6px;
-                padding-left: 10px;
-            ">
-            Urganch tumani hokimi <br> G‘ayratjon Sultonov</p>
-
-            <div class="calendar">
-        <div class="calendar-header">
-            <button  id="prevBtn">&lt;</button>
-            <h2 id="monthYear"></h2>
-            <button id="nextBtn">&gt;</button>
-        </div>
-        <div class="calendar-body">
-            <table class="calendar-table">
+            <p class="card-text">
+            Urganch tumani hokimi <br> G‘ayratjon Sultonov
+            </p>
+          <div class="calendar">
+            <div class="calendar-header">
+              <button  id="prevBtn">&lt;</button>
+              <h2 id="monthYear"></h2>
+              <button id="nextBtn">&gt;</button>
+            </div>
+            <div class="calendar-body">
+              <table class="calendar-table">
                 <thead>
-                    <tr>
-                        <th>Sun</th>
-                        <th>Mon</th>
-                        <th>Tue</th>
-                        <th>Wed</th>
-                        <th>Thu</th>
-                        <th>Fri</th>
-                        <th>Sat</th>
-                    </tr>
+                  <tr>
+                    <th>Sun</th>
+                    <th>Mon</th>
+                    <th>Tue</th>
+                    <th>Wed</th>
+                    <th>Thu</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                  </tr>
                 </thead>
                 <tbody id="calendarBody"></tbody>
-            </table>
-        </div>
-    </div>
-
-            <!-- <a href="https://lex.uz/docs/-6600413">
-              <img src="/assets/img/2030.jpg">
-            </a> -->
-
+              </table>
+            </div>
+          </div>
+            <a href="https://lex.uz/docs/-6600413">
+              <img id="img-2030" src="/assets/img/2030.jpg">
+            </a>
           </div>
         </div>
-
       </div>
     </section>
 
@@ -378,20 +353,19 @@
 
   <div id="preloader"></div>
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+      class="bi bi-arrow-up-short"></i>
+  </a>
+  
+  <div class="poll">
+        <div class="question"></div>
+        <div class="answers"></div>
+        <span class="span-poll"></span>
+  </div>
 
-  <!-- Vendor JS Files -->
-  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
-  <script src="assets/vendor/aos/aos.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <x-js-link>
+    <!-- js links -->
+  </x-js-link>
 
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-  <script src="assets/js/script.js"></script>
   <script>
     function posts() {
     $.ajax({
@@ -496,6 +470,82 @@ document.addEventListener('DOMContentLoaded', function () {
         generateCalendar(currentMonth, currentYear);
     });
 });
+  </script>
+  <script>
+    let poll =
+        {
+            question: "Veb-sayt faoliyatini baholang",
+            answers: ["A'lo", "Yaxshi", "Qoniqarli", "Qoniqarsiz"],
+            pollcount: 100,
+            answerweight: [60, 10, 20, 10], //sum = 100
+            selectanswer: -1
+        };
+
+        let polldom =
+        {
+            question: document.querySelector(".poll .question"),
+            answers: document.querySelector(".poll .answers")
+        };
+
+        polldom.question.innerText = poll.question;
+        polldom.answers.innerHTML = poll.answers.map(function (answer, i) {
+            return (
+                `
+        <div class="answer" onclick="markanswer('${i}')">
+        ${answer}
+        <span class="percentage_bar"></span>
+        <span class="percentage_value"></span>
+        </div>
+        
+        `
+            );
+        }).join("");
+
+
+        function markanswer(i) {
+            poll.selectanswer = +i;
+
+            try {
+                document.querySelector(".poll .answers .answer.selected")
+                    .classList.remove(".selected");
+            }
+            catch (msg) { }
+
+            document.querySelectorAll(".poll .answers .answer")
+            [+i].classList.add(".selected");
+
+
+            showresults();
+        }
+
+
+
+        function showresults() {
+            let answers = document.querySelectorAll(".poll .answers .answer");
+
+            for (let i = 0; i < answers.length; i++) {
+
+                let percentage = 0;
+
+                if (i == poll.selectanswer) {
+                    percentage = Math.round
+                        (
+                            (poll.answerweight[i] + 1) * 100 / (poll.pollcount + 1)
+                        );
+                }
+
+                else {
+                    percentage = Math.round
+                        (
+                            (poll.answerweight[i]) * 100 / (poll.pollcount + 1)
+                        );
+                }
+
+                answers[i].querySelector(".percentage_bar").style.width = percentage + "%";
+                answers[i].querySelector(".percentage_value").innerText = percentage + "%";
+
+            }
+        }
   </script>
 
 </body>
