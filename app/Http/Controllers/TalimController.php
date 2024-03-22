@@ -2,28 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Post;
+use App\Models\Talim;
 use Illuminate\Http\Request;
 
-class PostController extends Controller
+class TalimController extends Controller
 {
-    public function sixdata()
-    {
-        $posts = Post::orderBy('id', 'desc')->limit(6)->get();
-        return response()->json([
-            "posts" => $posts  //6 ta malumot qaytaradi
-        ]);
-    }
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $posts = Post::all();
+        $talim = Talim::all();
         return response()->json([
-            "posts" => $posts
+            'talim' => $talim
         ]);
-
     }
 
     /**
@@ -31,7 +23,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        // return view(ADMIN PANEL, DSAHBOARD);
+        //
     }
 
     /**
@@ -39,21 +31,21 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-    
+        //
     }
 
     /**
      * Display the specified resource.
      */
-    public function show($id)//id routeda optional {id?} turbdi agar id berilmasa avtomat null o'zlashtiradi
+    public function show(Talim $talim)
     {
-        return response()->json(Post::find($id));//agar id ga urlda qiymat berilsa (?=if) id bo'yicha Post Modeldagi obyektni olib keladi
-    }   
+        //
+    }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Talim $talim)
     {
         //
     }
@@ -61,7 +53,7 @@ class PostController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Talim $talim)
     {
         //
     }
@@ -69,9 +61,8 @@ class PostController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Talim $talim)
     {
         //
     }
-    
 }

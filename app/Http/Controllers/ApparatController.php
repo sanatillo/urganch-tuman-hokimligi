@@ -27,7 +27,7 @@ class ApparatController extends Controller
      */
     public function create()
     {
-        //
+        //return view('adminpaneldagi view');
     }
 
     /**
@@ -35,7 +35,14 @@ class ApparatController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        // $apparat = Apparat::create([
+        //     'ism_sharifi' => $request->ism_sharifi,
+        //     'hodim_malumotlari' => $request->hodim_malumotlari,
+        //     'image_url' => $request->image_url,
+        //     'tel_number' => $request->tel_number,
+        //     'masuliyatlari' => $request->masuliyatlari,
+        //     'email' => $request->email,
+        // ]);
     }
 
     /**

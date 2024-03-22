@@ -2,19 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Munosabat;
+use App\Models\Vacancy;
 use Illuminate\Http\Request;
 
-class MunosabatController extends Controller
+class VacancyController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $munosabat = Munosabat::all();
+        $vacancy = Vacancy::all();
         return response()->json([
-            'munosabatlar' => $munosabat,
+            'vacanyalar' => $vacancy
         ]);
     }
 

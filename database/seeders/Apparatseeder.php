@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
 
-class Apparatseeder extends Seeder
+class ApparatSeeder extends Seeder
 {
     
     public function run(): void

@@ -2,28 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Post;
+use App\Models\Tender;
 use Illuminate\Http\Request;
 
-class PostController extends Controller
+class TenderController extends Controller
 {
-    public function sixdata()
-    {
-        $posts = Post::orderBy('id', 'desc')->limit(6)->get();
-        return response()->json([
-            "posts" => $posts  //6 ta malumot qaytaradi
-        ]);
-    }
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $posts = Post::all();
+        $tender = Tender::all();
         return response()->json([
-            "posts" => $posts
+            'tenderlar' => $tender
         ]);
-
     }
 
     /**
@@ -31,7 +23,7 @@ class PostController extends Controller
      */
     public function create()
     {
-        // return view(ADMIN PANEL, DSAHBOARD);
+        //
     }
 
     /**
@@ -39,16 +31,16 @@ class PostController extends Controller
      */
     public function store(Request $request)
     {
-    
+        //
     }
 
     /**
      * Display the specified resource.
      */
-    public function show($id)//id routeda optional {id?} turbdi agar id berilmasa avtomat null o'zlashtiradi
+    public function show(string $id)
     {
-        return response()->json(Post::find($id));//agar id ga urlda qiymat berilsa (?=if) id bo'yicha Post Modeldagi obyektni olib keladi
-    }   
+        //
+    }
 
     /**
      * Show the form for editing the specified resource.
@@ -73,5 +65,4 @@ class PostController extends Controller
     {
         //
     }
-    
 }

@@ -11,12 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('Aloqalaris', function (Blueprint $table) {
+        Schema::create('tadbir_types', function (Blueprint $table) {
             $table->id();
-            $table->text('title');
-            $table->text('content');
-            $table->string('photo_path',100);       
-            $table->timestamps();
+            $table->string('name',60);
+            // $table->timestamps();
         });
     }
 
@@ -25,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('Aloqalaris');
+        Schema::dropIfExists('tadbir_types');
     }
 };

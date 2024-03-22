@@ -2,19 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Qilishlar;
+use App\Models\Company;
 use Illuminate\Http\Request;
 
-class QilishlarController extends Controller
+class CompanyController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $qilishlar = Qilishlar::all();
+        $companies = Company::all();
         return response()->json([
-            'qilinayotgan_ishlar' => $qilishlar
+            'Tashkilotlar' => $companies
         ]);
     }
 

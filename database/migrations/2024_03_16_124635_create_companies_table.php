@@ -11,11 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('Qilishlars', function (Blueprint $table) {
+        Schema::create('companies', function (Blueprint $table) {
             $table->id();
-            $table->string('title',100);
-            $table->text('content');
-            $table->string('photo_path',100);
+            $table->string('tashkilot_nomi', 60);
+            $table->string('tashkilot_rahbar', 40);
+            $table->string('contact', 60);
             $table->timestamps();
         });
     }
@@ -25,6 +25,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('Qilishlars');
+        Schema::dropIfExists('companies');
     }
 };
