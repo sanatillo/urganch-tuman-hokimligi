@@ -11,16 +11,16 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('Apparats', function (Blueprint $table) {
+        Schema::create('apparats', function (Blueprint $table) {
             $table->id();
             $table->string('ismi_sharifi');
             $table->string('hodim_malumotlari');
             $table->string('kasbi');
-            $table->string('photo_path');
+            $table->foreignId('image_id')->constrained('images_url','id');
             $table->string('telnumber');
             $table->string('masuliyati');   
             $table->string('email');    
-            $table->timestamps();
+            // $table->timestamps();
         });
     }
 
@@ -29,6 +29,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('Apparats');
+        Schema::dropIfExists('apparats');
     }
 };

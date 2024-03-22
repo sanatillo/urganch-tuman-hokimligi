@@ -11,12 +11,10 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('Munosabats', function (Blueprint $table) {
+        Schema::create('talim_types', function (Blueprint $table) {
             $table->id();
-            $table->text('title');
-            $table->text('content');
-            $table->string('photo_path',70);
-            $table->timestamps();
+            $table->string('name', 30);
+            // $table->timestamps();
         });
     }
 
@@ -25,6 +23,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('Munosabats');
+        Schema::dropIfExists('talim_types');
     }
 };

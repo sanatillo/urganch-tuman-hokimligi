@@ -2,19 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Aloqalari;
+use App\Models\Rais;
 use Illuminate\Http\Request;
 
-class AloqalarController extends Controller
+class RaisController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $aloqalar = Aloqalari::all();
+        $rais = Rais::all();
         return response()->json([
-            'aloqalar' => $aloqalar
+            'raislar' => $rais
         ]);
     }
 
@@ -37,7 +37,7 @@ class AloqalarController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Rais $rais)
     {
         //
     }
@@ -45,7 +45,7 @@ class AloqalarController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Rais $rais)
     {
         //
     }
@@ -53,7 +53,7 @@ class AloqalarController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Rais $rais)
     {
         //
     }
@@ -61,7 +61,7 @@ class AloqalarController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(Rais $rais)
     {
         //
     }

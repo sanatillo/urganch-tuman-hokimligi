@@ -11,11 +11,11 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('admin', function (Blueprint $table) {
+        Schema::create('images_url', function (Blueprint $table) {
             $table->id();
-            $table->string('username', 32)->unique();
-            $table->string( 'password' );
-            $table->timestamps();
+            $table->string('main_img_url');
+            $table->string('thumbnail_img_url')->nullable();
+            // $table->timestamps();
         });
     }
 
@@ -24,6 +24,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('admin');
+        Schema::dropIfExists('images_url');
     }
 };
